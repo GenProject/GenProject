@@ -1,0 +1,68 @@
+Uri: https://genshinmap.github.io/
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\index.htm
+Content Type: text/html
+
+Uri: https://genshinmap.github.io/favicon.ico
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://genshinmap.github.io/logo192.png
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\logo192.png
+Content Type: image/png
+
+Uri: https://genshinmap.github.io/manifest.json
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\manifest.json
+Content Type: application/json
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet\1.7.1\leaflet.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet.markercluster\1.4.1\MarkerCluster.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet.draw\1.0.4\leaflet.draw.css
+Content Type: text/css
+
+Uri: https://genshinmap.github.io/static/css/2.e8d2968b.chunk.css
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\static\css\2.e8d2968b.chunk.css
+Content Type: text/css
+
+Uri: https://genshinmap.github.io/static/css/main.dc3eed02.chunk.css
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\static\css\main.dc3eed02.chunk.css
+Content Type: text/css
+
+Uri: https://genshinmap.github.io/static/js/2.04398c86.chunk.js
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\static\js\2.04398c86.chunk.js
+Content Type: application/javascript
+
+Uri: https://genshinmap.github.io/static/js/main.36c92e54.chunk.js
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\static\js\main.36c92e54.chunk.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/layers.png
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet\1.7.1\images\layers.png
+Content Type: image/png
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/layers-2x.png
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet\1.7.1\images\layers-2x.png
+Content Type: image/png
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet\1.7.1\images\marker-icon.png
+Content Type: image/png
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/images/spritesheet.png
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet.draw\1.0.4\images\spritesheet.png
+Content Type: image/png
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/images/spritesheet.svg
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet.draw\1.0.4\images\spritesheet.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/images/spritesheet-2x.png
+File Name: D:\Downloaded Web Sites\genshinmap.github.io\ajax\libs\leaflet.draw\1.0.4\images\spritesheet-2x.png
+Content Type: image/png
+
