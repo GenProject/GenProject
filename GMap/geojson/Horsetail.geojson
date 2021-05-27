@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.415039,
+          24.766785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.986328,
+          24.647017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.722656,
+          24.20689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.183594,
+          27.527758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.798828,
+          27.566721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.65625,
+          28.960089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.633789,
+          27.176469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horsetail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.161133,
+          26.94166
+        ]
+      }
+    }
+  ]
+}

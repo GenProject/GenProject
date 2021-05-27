@@ -4,826 +4,988 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "* 123",
-        "description": "In a wooden crate next to pole"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.749023,
-          -4.937724
+          108.017578,
+          72.399028
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -10.962764
+          103.293457,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -11.135287
+          103.293457,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.96875,
-          -11.156845
+          103.293457,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.144531,
-          -11.199957
+          103.293457,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.276367,
-          -11.22151
+          100.667725,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with tent"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.237305,
-          -18.583776
+          100.667725,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.808594,
-          -17.790535
+          100.667725,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.664551,
-          -25.700938
+          100.667725,
+          73.928553
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with stuff on the table"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.005371,
-          -26.411551
+          94.96582,
+          73.754279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -67.258301,
-          -26.214591
+          94.96582,
+          73.754279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urns"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.006836,
-          -27.508271
+          94.96582,
+          73.754279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -41.550293,
-          -21.207459
+          94.96582,
+          73.754279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with broken wagon"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -42.583008,
-          -21.022983
+          85.155029,
+          72.26231
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -39.331055,
-          -20.61222
+          85.155029,
+          72.26231
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the basket"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -88.681641,
-          1.120534
+          85.155029,
+          72.26231
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -87.758789,
-          1.493971
+          85.155029,
+          72.26231
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.556641,
-          13.218556
+          83.001709,
+          70.590721
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.402832,
-          13.624633
+          83.001709,
+          70.590721
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -45.351562,
-          2.526037
+          83.001709,
+          70.590721
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -23.24707,
-          -5.11283
+          83.001709,
+          70.590721
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -20.456543,
-          4.258768
+          84.561768,
+          69.09994
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the chest stand"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.907227,
-          4.499762
+          84.561768,
+          69.09994
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.85498,
-          27.605671
+          84.561768,
+          69.09994
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crates in the back."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.19043,
-          38.651198
+          84.561768,
+          69.09994
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the jars."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -36.342773,
-          37.09024
+          87.165527,
+          68.966279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.891602,
-          37.614231
+          87.165527,
+          68.966279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn almost at the top of the mountain near the bridge. Use the teleporter on Mt. Aozang to get here."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.064453,
-          -4.915833
+          87.165527,
+          68.966279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden crate almost at the top of the mountain. Use the teleporter on Mt. Aozang to get here."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.591797,
-          -5.090944
+          87.165527,
+          68.966279
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.668945,
-          -16.214675
+          80.441895,
+          69.295027
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken boat."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -33.881836,
-          -6.708254
+          80.441895,
+          69.295027
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the barrel."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.629883,
-          -6.926427
+          80.441895,
+          69.295027
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden shack."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -48.47168,
-          -9.709057
+          80.441895,
+          69.295027
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.361328,
-          12.382928
+          73.575439,
+          70.873491
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.471191,
-          12.189704
+          73.575439,
+          70.873491
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.229492,
-          12.168226
+          73.575439,
+          70.873491
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.014648,
-          6.926427
+          73.575439,
+          70.873491
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.882813,
-          7.231699
+          79.123535,
+          72.392383
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.729004,
-          7.013668
+          79.123535,
+          72.392383
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.450195,
-          -8.754795
+          79.123535,
+          72.392383
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.274414,
-          -8.646196
+          79.123535,
+          72.392383
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.74707,
-          -9.058702
+          81.958008,
+          74.413974
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.65918,
-          -8.841651
+          81.958008,
+          74.413974
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -50.932617,
-          38.68551
+          81.958008,
+          74.413974
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate next to Pops Zhou."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -15.117188,
-          30.259067
+          81.958008,
+          74.413974
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the table."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.547852,
-          25.562265
+          73.048096,
+          73.958939
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.503906,
-          -25.244696
+          73.048096,
+          73.958939
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.61377,
-          -25.522615
+          73.048096,
+          73.958939
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack on the ground inside the tent."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -49.306641,
-          -69.790341
+          73.048096,
+          73.958939
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.435059,
-          -38.908133
+          66.983643,
+          71.127434
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.62207,
-          -36.544949
+          66.983643,
+          71.127434
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with pouch"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.698242,
-          15.114553
+          66.983643,
+          71.127434
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the red satchel"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.456543,
-          15.178181
+          66.983643,
+          71.127434
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the backpack"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.950684,
-          14.604847
+          62.380371,
+          71.138093
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with backpack on the ground."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.551758,
-          5.397273
+          62.380371,
+          71.138093
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -61.303711,
-          -38.030786
+          62.380371,
+          71.138093
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Zhang Shun is an NPC in Liyue Harbor who sells 2-star Lucky Dog (Artifact Set) pieces. His stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Zhang_Shun\">Check this NPC on wiki</a>"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.995117,
-          -65.58572
+          62.380371,
+          71.138093
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Shiliu is an NPC in Mondstadt that sells 2-star Adventurer (Artifact Set) pieces. Her stock refreshes every 7 days. You can buy 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Shiliu\">Check this NPC on wiki</a>"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          53.569336,
-          59.400365
+          62.874756,
+          68.334376
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor (Night)",
-        "description": "Linlang is an NPC found in Liyue Harbor, Liyue. Her shop, Xigu Antiques, is only open at nighttime from <b>19:00</b> to <b>05:59</b>. Her stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Linlang\">Check this NPC on wiki</a>"
+        "name": "Valberry"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.80835,
-          -68.395135
+          62.874756,
+          68.334376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.874756,
+          68.334376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.874756,
+          68.334376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.489502,
+          67.609221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.489502,
+          67.609221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.489502,
+          67.609221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.489502,
+          67.609221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.0271,
+          69.244472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.0271,
+          69.244472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.0271,
+          69.244472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.0271,
+          69.244472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.574707,
+          69.033211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.574707,
+          69.033211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.574707,
+          69.033211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.574707,
+          69.033211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.017578,
+          72.399028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.017578,
+          72.399028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valberry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.017578,
+          72.399028
         ]
       }
     }

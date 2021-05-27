@@ -1,0 +1,96 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mist Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.402344,
+          64.811557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mist Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.567383,
+          65.053602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mist Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.124023,
+          54.033586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mist Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.849609,
+          56.752723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mist Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.888672,
+          49.696062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mist Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.713867,
+          35.710838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mist Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.669922,
+          35.995785
+        ]
+      }
+    }
+  ]
+}

@@ -4,826 +4,1027 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "* 123",
-        "description": "In a wooden crate next to pole"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.749023,
-          -4.937724
+          43.308105,
+          -55.053203
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -10.962764
+          43.571777,
+          -54.990222
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -11.135287
+          43.747559,
+          -54.826008
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.96875,
-          -11.156845
+          43.461914,
+          -54.226708
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.144531,
-          -11.199957
+          43.725586,
+          -54.136696
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.276367,
-          -11.22151
+          52.053223,
+          -53.47497
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with tent"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.237305,
-          -18.583776
+          51.899414,
+          -52.829321
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.808594,
-          -17.790535
+          51.525879,
+          -52.736292
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.664551,
-          -25.700938
+          52.272949,
+          -52.629729
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with stuff on the table"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.005371,
-          -26.411551
+          55.17334,
+          -56.595791
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -67.258301,
-          -26.214591
+          55.019531,
+          -57.100452
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urns"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.006836,
-          -27.508271
+          54.953613,
+          -57.243394
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -41.550293,
-          -21.207459
+          55.415039,
+          -56.728622
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with broken wagon"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -42.583008,
-          -21.022983
+          49.21875,
+          -60.844911
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -39.331055,
-          -20.61222
+          49.21875,
+          -59.92199
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the basket"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -88.681641,
-          1.120534
+          49.943848,
+          -60.586967
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -87.758789,
-          1.493971
+          46.054688,
+          -61.354614
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.556641,
-          13.218556
+          -41.835938,
+          -46.301406
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.402832,
-          13.624633
+          -41.923828,
+          -46.468133
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -45.351562,
-          2.526037
+          -42.143555,
+          -46.377254
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -23.24707,
-          -5.11283
+          -39.04541,
+          -44.793531
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -20.456543,
-          4.258768
+          -38.781738,
+          -44.715514
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the chest stand"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.907227,
-          4.499762
+          -39.243164,
+          -44.621754
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.85498,
-          27.605671
+          49.943848,
+          -60.119619
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crates in the back."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.19043,
-          38.651198
+          48.14209,
+          -60.930432
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the jars."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -36.342773,
-          37.09024
+          11.513672,
+          -53.67068
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.891602,
-          37.614231
+          11.821289,
+          -53.644638
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn almost at the top of the mountain near the bridge. Use the teleporter on Mt. Aozang to get here."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.064453,
-          -4.915833
+          12.084961,
+          -53.14677
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden crate almost at the top of the mountain. Use the teleporter on Mt. Aozang to get here."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.591797,
-          -5.090944
+          10.546875,
+          -53.278353
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.668945,
-          -16.214675
+          11.25,
+          -53.278353
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken boat."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -33.881836,
-          -6.708254
+          13.051758,
+          -53.041213
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the barrel."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.629883,
-          -6.926427
+          10.898438,
+          -52.643063
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden shack."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -48.47168,
-          -9.709057
+          9.536133,
+          -52.802761
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.361328,
-          12.382928
+          10.59082,
+          -53.904338
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.471191,
-          12.189704
+          -41.308594,
+          20.179724
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.229492,
-          12.168226
+          137.592773,
+          67.390599
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.014648,
-          6.926427
+          136.318359,
+          67.221053
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.882813,
-          7.231699
+          135.483398,
+          66.895596
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.729004,
-          7.013668
+          134.296875,
+          67.08455
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.450195,
-          -8.754795
+          134.692383,
+          67.407487
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.274414,
-          -8.646196
+          134.25293,
+          67.356785
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.74707,
-          -9.058702
+          133.901367,
+          68.382996
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.65918,
-          -8.841651
+          133.901367,
+          68.704486
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -50.932617,
-          38.68551
+          133.945313,
+          68.831802
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate next to Pops Zhou."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -15.117188,
-          30.259067
+          134.25293,
+          68.926811
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the table."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.547852,
-          25.562265
+          134.34082,
+          69.052858
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.503906,
-          -25.244696
+          135.351563,
+          68.720441
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.61377,
-          -25.522615
+          135.131836,
+          69.178184
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack on the ground inside the tent."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -49.306641,
-          -69.790341
+          135.307617,
+          69.09994
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.435059,
-          -38.908133
+          135.966797,
+          69.178184
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.62207,
-          -36.544949
+          136.582031,
+          69.021414
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with pouch"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.698242,
-          15.114553
+          137.109375,
+          68.815927
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the red satchel"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.456543,
-          15.178181
+          137.504883,
+          69.131271
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the backpack"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.950684,
-          14.604847
+          137.548828,
+          68.911005
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with backpack on the ground."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.551758,
-          5.397273
+          138.603516,
+          68.879358
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -61.303711,
-          -38.030786
+          30.805664,
+          57.421294
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Zhang Shun is an NPC in Liyue Harbor who sells 2-star Lucky Dog (Artifact Set) pieces. His stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Zhang_Shun\">Check this NPC on wiki</a>"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.995117,
-          -65.58572
+          92.285156,
+          44.150681
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Shiliu is an NPC in Mondstadt that sells 2-star Adventurer (Artifact Set) pieces. Her stock refreshes every 7 days. You can buy 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Shiliu\">Check this NPC on wiki</a>"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          53.569336,
-          59.400365
+          92.724609,
+          44.245199
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor (Night)",
-        "description": "Linlang is an NPC found in Liyue Harbor, Liyue. Her shop, Xigu Antiques, is only open at nighttime from <b>19:00</b> to <b>05:59</b>. Her stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Linlang\">Check this NPC on wiki</a>"
+        "name": "Crab"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.80835,
-          -68.395135
+          92.15332,
+          44.590467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.307129,
+          44.590467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.208008,
+          44.370987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.988281,
+          44.653024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.350586,
+          48.312428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.053711,
+          47.901614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.921875,
+          48.57479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.482422,
+          49.009051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.141602,
+          49.095452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.449219,
+          49.21042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.921875,
+          49.61071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.736328,
+          42.940339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.098633,
+          41.409776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.901367,
+          43.548548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.813477,
+          40.480381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.263672,
+          39.605688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.142578,
+          36.173357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.878906,
+          35.924645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.164551,
+          35.924645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.186523,
+          35.639441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.208496,
+          35.496456
         ]
       }
     }

@@ -4,826 +4,894 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "* 123",
-        "description": "In a wooden crate next to pole"
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.749023,
-          -4.937724
+          -106.962891,
+          -20.303418
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -10.962764
+          12.612305,
+          20.838278
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "* Cor Lapis",
+        "description": "Inside Cave"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -11.135287
+          -51.789551,
+          -69.295027
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "* Cor Lapis",
+        "description": "Inside Cave"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.96875,
-          -11.156845
+          -50.888672,
+          -69.465262
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "* Cor Lapis",
+        "description": "Inside, right next to stone wall and the pile of rubble."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.144531,
-          -11.199957
+          56.491699,
+          -59.667741
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.276367,
-          -11.22151
+          -96.855469,
+          4.740675
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with tent"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.237305,
-          -18.583776
+          -96.196289,
+          4.631179
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.808594,
-          -17.790535
+          -94.96582,
+          3.908099
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "* Cor Lapis",
+        "description": "Not actually inside, its on the right side of stairs if walking up, map ingame is kinda wrong here."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.664551,
-          -25.700938
+          -72.949219,
+          -59.456243
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with stuff on the table"
+        "name": "* Cor Lapis",
+        "description": "Almost at top of mountain."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.005371,
-          -26.411551
+          -56.623535,
+          -68.407268
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "* Cor Lapis",
+        "description": "Top of mountain"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -67.258301,
-          -26.214591
+          55.195313,
+          -59.689926
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urns"
+        "name": "* Cor Lapis",
+        "description": "Top of mountain"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.006836,
-          -27.508271
+          55.107422,
+          -60.511343
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "* Cor Lapis",
+        "description": "Inside Cave"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -41.550293,
-          -21.207459
+          -32.365723,
+          8.515836
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with broken wagon"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -42.583008,
-          -21.022983
+          24.65332,
+          -20.200346
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -39.331055,
-          -20.61222
+          19.6875,
+          -9.838979
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the basket"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -88.681641,
-          1.120534
+          7.910156,
+          -7.275292
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -87.758789,
-          1.493971
+          7.624512,
+          -8.276727
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.556641,
-          13.218556
+          12.832031,
+          20.632784
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.402832,
-          13.624633
+          13.623047,
+          21.698265
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -45.351562,
-          2.526037
+          16.391602,
+          19.642588
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -23.24707,
-          -5.11283
+          16.699219,
+          19.68397
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -20.456543,
-          4.258768
+          16.567383,
+          21.820708
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the chest stand"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.907227,
-          4.499762
+          16.259766,
+          21.943046
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack"
+        "name": "* Cor Lapis",
+        "description": "Inside cave."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.85498,
-          27.605671
+          15.996094,
+          21.739091
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crates in the back."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.19043,
-          38.651198
+          38.95752,
+          -52.629729
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the jars."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -36.342773,
-          37.09024
+          54.602051,
+          -57.36209
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.891602,
-          37.614231
+          45.175781,
+          -62.492028
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn almost at the top of the mountain near the bridge. Use the teleporter on Mt. Aozang to get here."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.064453,
-          -4.915833
+          -46.779785,
+          -42.309815
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden crate almost at the top of the mountain. Use the teleporter on Mt. Aozang to get here."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.591797,
-          -5.090944
+          -47.087402,
+          -42.472097
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.668945,
-          -16.214675
+          -42.956543,
+          -45.813486
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken boat."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -33.881836,
-          -6.708254
+          -71.015625,
+          -70.363091
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the barrel."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.629883,
-          -6.926427
+          -58.601074,
+          -61.058285
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden shack."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -48.47168,
-          -9.709057
+          -65.588379,
+          -62.308794
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.361328,
-          12.382928
+          -78.33252,
+          7.275292
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.471191,
-          12.189704
+          -80.661621,
+          11.178402
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.229492,
-          12.168226
+          -62.556152,
+          14.796128
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.014648,
-          6.926427
+          -62.336426,
+          14.668626
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.882813,
-          7.231699
+          -55.17334,
+          10.25006
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.729004,
-          7.013668
+          -56.118164,
+          9.622414
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.450195,
-          -8.754795
+          -65.258789,
+          -42.374778
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.274414,
-          -8.646196
+          -65.061035,
+          -42.114524
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.74707,
-          -9.058702
+          -63.017578,
+          -36.368222
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.65918,
-          -8.841651
+          -64.995117,
+          -28.130128
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -50.932617,
-          38.68551
+          -64.643555,
+          -28.168875
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate next to Pops Zhou."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -15.117188,
-          30.259067
+          -45.043945,
+          -23.180764
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the table."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.547852,
-          25.562265
+          -89.187012,
+          -2.306506
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.503906,
-          -25.244696
+          -89.187012,
+          -2.064982
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.61377,
-          -25.522615
+          -63.061523,
+          -30.826781
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack on the ground inside the tent."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -49.306641,
-          -69.790341
+          -54.711914,
+          -32.879587
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.435059,
-          -38.908133
+          -52.77832,
+          -37.020098
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.62207,
-          -36.544949
+          -30.102539,
+          42.195969
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with pouch"
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.698242,
-          15.114553
+          -30.410156,
+          42.326062
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the red satchel"
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.456543,
-          15.178181
+          -29.882813,
+          42.423457
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the backpack"
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.950684,
-          14.604847
+          -49.262695,
+          31.765537
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with backpack on the ground."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.551758,
-          5.397273
+          -48.999023,
+          31.728167
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -61.303711,
-          -38.030786
+          4.658203,
+          -35.46067
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Zhang Shun is an NPC in Liyue Harbor who sells 2-star Lucky Dog (Artifact Set) pieces. His stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Zhang_Shun\">Check this NPC on wiki</a>"
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.995117,
-          -65.58572
+          -107.314453,
+          -20.488773
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Shiliu is an NPC in Mondstadt that sells 2-star Adventurer (Artifact Set) pieces. Her stock refreshes every 7 days. You can buy 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Shiliu\">Check this NPC on wiki</a>"
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          53.569336,
-          59.400365
+          -107.20459,
+          -20.303418
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor (Night)",
-        "description": "Linlang is an NPC found in Liyue Harbor, Liyue. Her shop, Xigu Antiques, is only open at nighttime from <b>19:00</b> to <b>05:59</b>. Her stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Linlang\">Check this NPC on wiki</a>"
+        "name": "Cor Lapis"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.80835,
-          -68.395135
+          -107.072754,
+          -20.509355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.02832,
+          -17.685895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.808594,
+          -17.85329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.423828,
+          -18.521283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.94043,
+          -18.39623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.040039,
+          -15.834536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.644531,
+          -15.919074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.655273,
+          -12.640338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cor Lapis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.479492,
+          -12.854649
         ]
       }
     }

@@ -4,826 +4,897 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "* 123",
-        "description": "In a wooden crate next to pole"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.749023,
-          -4.937724
+          52.822266,
+          47.857403
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -10.962764
+          -25.993652,
+          -68.293779
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -11.135287
+          -25.510254,
+          -68.318146
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.96875,
-          -11.156845
+          -24.829102,
+          -67.916881
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.144531,
-          -11.199957
+          -24.65332,
+          -68.073305
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.276367,
-          -11.22151
+          -27.421875,
+          -65.955426
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with tent"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.237305,
-          -18.583776
+          -26.894531,
+          -65.856756
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.808594,
-          -17.790535
+          -26.762695,
+          -66.053716
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.664551,
-          -25.700938
+          -26.477051,
+          -65.68543
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with stuff on the table"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.005371,
-          -26.411551
+          -25.72998,
+          -68.204212
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -67.258301,
-          -26.214591
+          -26.433105,
+          -65.874725
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urns"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.006836,
-          -27.508271
+          -25.554199,
+          -66.16939
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -41.550293,
-          -21.207459
+          -24.916992,
+          -66.2226
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with broken wagon"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -42.583008,
-          -21.022983
+          -24.389648,
+          -66.434323
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -39.331055,
-          -20.61222
+          -24.191895,
+          -65.883704
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the basket"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -88.681641,
-          1.120534
+          -24.191895,
+          -66.053716
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -87.758789,
-          1.493971
+          -24.060059,
+          -66.089364
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.556641,
-          13.218556
+          -27.685547,
+          -64.839597
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -60.402832,
-          13.624633
+          -27.399902,
+          -64.774125
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -45.351562,
-          2.526037
+          -27.927246,
+          -64.727262
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -23.24707,
-          -5.11283
+          -27.70752,
+          -64.595613
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -20.456543,
-          4.258768
+          -27.399902,
+          -64.623877
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the chest stand"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.907227,
-          4.499762
+          -45.175781,
+          -71.580532
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          8.85498,
-          27.605671
+          -50.625,
+          -71.732662
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crates in the back."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.19043,
-          38.651198
+          -53.239746,
+          -71.427179
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the jars."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -36.342773,
-          37.09024
+          -24.477539,
+          -24.106647
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.891602,
-          37.614231
+          -24.609375,
+          -23.926013
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn almost at the top of the mountain near the bridge. Use the teleporter on Mt. Aozang to get here."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.064453,
-          -4.915833
+          -25.532227,
+          -23.463246
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden crate almost at the top of the mountain. Use the teleporter on Mt. Aozang to get here."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -96.591797,
-          -5.090944
+          -4.96582,
+          -37.03764
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -95.668945,
-          -16.214675
+          -4.899902,
+          -36.826875
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken boat."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -33.881836,
-          -6.708254
+          -42.692871,
+          -44.024422
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the barrel."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -30.629883,
-          -6.926427
+          -43.066406,
+          -43.961191
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden shack."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -48.47168,
-          -9.709057
+          -43.330078,
+          -44.103365
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.361328,
-          12.382928
+          -43.59375,
+          -43.913723
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.471191,
-          12.189704
+          -30.805664,
+          -50.513427
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          5.229492,
-          12.168226
+          -30.234375,
+          -50.569283
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.014648,
-          6.926427
+          52.558594,
+          47.620975
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.882813,
-          7.231699
+          -49.064941,
+          -57.668911
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.729004,
-          7.013668
+          -48.933105,
+          -57.809651
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.450195,
-          -8.754795
+          -48.80127,
+          -57.984808
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          46.274414,
-          -8.646196
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          45.74707,
-          -9.058702
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          45.65918,
-          -8.841651
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -50.932617,
-          38.68551
+          -59.667741
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate next to Pops Zhou."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -15.117188,
-          30.259067
+          -51.37207,
+          -59.344395
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the table."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.547852,
-          25.562265
+          -50.778809,
+          -59.209688
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.503906,
-          -25.244696
+          -52.185059,
+          -59.489726
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.61377,
-          -25.522615
+          -42.978516,
+          -71.531871
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack on the ground inside the tent."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -49.306641,
-          -69.790341
+          -43.374023,
+          -71.286699
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.435059,
-          -38.908133
+          -44.406738,
+          -71.350041
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.62207,
-          -36.544949
+          -44.362793,
+          -71.300793
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with pouch"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.698242,
-          15.114553
+          -47.197266,
+          -71.746432
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the red satchel"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.456543,
-          15.178181
+          -47.438965,
+          -71.787681
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the backpack"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.950684,
-          14.604847
+          -65.742188,
+          -69.364831
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with backpack on the ground."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.551758,
-          5.397273
+          -57.524414,
+          12.661778
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -61.303711,
-          -38.030786
+          -57.678223,
+          12.726084
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Zhang Shun is an NPC in Liyue Harbor who sells 2-star Lucky Dog (Artifact Set) pieces. His stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Zhang_Shun\">Check this NPC on wiki</a>"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.995117,
-          -65.58572
+          -57.810059,
+          12.640338
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Shiliu is an NPC in Mondstadt that sells 2-star Adventurer (Artifact Set) pieces. Her stock refreshes every 7 days. You can buy 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Shiliu\">Check this NPC on wiki</a>"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          53.569336,
-          59.400365
+          65.522461,
+          65.201468
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor (Night)",
-        "description": "Linlang is an NPC found in Liyue Harbor, Liyue. Her shop, Xigu Antiques, is only open at nighttime from <b>19:00</b> to <b>05:59</b>. Her stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Linlang\">Check this NPC on wiki</a>"
+        "name": "Fish"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.80835,
-          -68.395135
+          65.192871,
+          65.053602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.083008,
+          65.256706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.599609,
+          65.118395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.077148,
+          20.344627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.505859,
+          20.13847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.461914,
+          20.591652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.890625,
+          20.097206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.407227,
+          20.344627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.036133,
+          66.51326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.772461,
+          66.372755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.080078,
+          66.372755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.387695,
+          66.407955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.124023,
+          66.266856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.511719,
+          65.458261
         ]
       }
     }

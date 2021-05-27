@@ -1,0 +1,1868 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Boar",
+        "description": "The boars will start fleeing if you teleport here, you will still be able to kill all of them if you're fast enough."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.383789,
+          29.802518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Boar",
+        "description": "The boars will start fleeing if you teleport here, you will still be able to kill all of them if you're fast enough."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.47168,
+          28.613459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Boar",
+        "description": "The boars will start fleeing if you teleport here, you will still be able to kill all of them if you're fast enough."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.823242,
+          28.22697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.912109,
+          -59.310768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.812988,
+          -59.097025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.318359,
+          -58.859224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.330078,
+          -58.043004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.549805,
+          -58.401712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.846191,
+          -58.881942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.930664,
+          -71.808271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.018555,
+          -71.12388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.380859,
+          -19.082884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.334961,
+          -42.714732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.618652,
+          -3.886177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.421875,
+          -12.683215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.158203,
+          -12.854649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.38623,
+          43.004647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.804688,
+          45.413876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.134277,
+          47.115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.166992,
+          39.909736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.551758,
+          64.0722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.027832,
+          63.646259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.012695,
+          -4.390229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.924805,
+          -5.747174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.654297,
+          -42.212245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.115723,
+          -42.195969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.691895,
+          -17.936929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.833984,
+          37.212832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.603027,
+          37.996163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.909668,
+          33.321349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.602051,
+          33.192731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.262207,
+          32.287133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.932617,
+          31.952162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.320312,
+          -57.586559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.74707,
+          -57.30279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.261719,
+          -58.950008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.987305,
+          -59.467408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.212891,
+          -48.195387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.168945,
+          -47.754098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.773438,
+          -47.606163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.553711,
+          -49.553726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.248047,
+          -48.019324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.533203,
+          -41.607228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.34668,
+          -40.580585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.941406,
+          -32.509762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.194336,
+          -32.212801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.62793,
+          43.229195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.012695,
+          45.920587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.417969,
+          42.293564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.055664,
+          39.97712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.704102,
+          38.891033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -32.915039,
+          43.802819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.308594,
+          45.890008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.662109,
+          63.704722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.013672,
+          63.704722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.088867,
+          66.548263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.264648,
+          66.705169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.412109,
+          63.607217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.510742,
+          59.556592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.05957,
+          69.534518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.535156,
+          57.668911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.274414,
+          36.5626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.043945,
+          -54.444492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.820313,
+          -24.006326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.071289,
+          -26.056783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.730957,
+          -21.7595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.248047,
+          -38.479395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.62207,
+          -43.100983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.05127,
+          -45.166547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.786133,
+          -18.562947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.387207,
+          -63.184108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.055176,
+          3.973861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.098145,
+          -3.995781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.773438,
+          -5.441022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.280273,
+          -70.199994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.941895,
+          -70.318738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.475586,
+          3.886177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.606934,
+          10.336536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.024414,
+          11.436955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.342773,
+          65.54027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.093262,
+          65.366837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.005371,
+          65.265902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.434082,
+          -44.229457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.765137,
+          -36.066862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.950684,
+          -27.566721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.787598,
+          -27.215556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.250977,
+          34.597042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.44873,
+          33.94336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.338379,
+          29.209713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.918945,
+          63.646259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.452148,
+          -54.622978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.65918,
+          -56.0475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.703125,
+          -56.194481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.470703,
+          -55.304138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.657227,
+          -55.429013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.789063,
+          -55.825973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.439453,
+          -57.515823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.724609,
+          -59.712097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.745117,
+          -59.667741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.467773,
+          -49.353756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.116211,
+          -50.457504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.092773,
+          -48.893615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.224609,
+          -48.283193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.762695,
+          -47.842658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.026367,
+          -48.136767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.882813,
+          -49.696062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.09082,
+          -49.866317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.490234,
+          -47.15984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.939453,
+          -42.90816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.972168,
+          -44.229457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -45.087891,
+          26.431228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.464844,
+          65.311829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.826172,
+          64.75539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.320313,
+          65.946472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.188477,
+          68.544315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.123047,
+          66.443107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.925781,
+          -13.197165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.980469,
+          -13.880746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.081055,
+          60.06484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.056641,
+          -3.513421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.916016,
+          71.510978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.762207,
+          71.476106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.161133,
+          30.977609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.007324,
+          31.147006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -44.494629,
+          -67.600849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.918457,
+          -75.946901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.883789,
+          -74.862152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.896973,
+          -70.162746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.746094,
+          -41.640078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.589844,
+          -29.840644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.294434,
+          -56.316537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.358398,
+          -36.686041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.085449,
+          -25.065697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.745117,
+          30.921076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.503418,
+          31.25977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.914063,
+          -55.924586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.231445,
+          -58.170702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -36.035156,
+          22.674847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Squirrel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.682617,
+          67.08455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.749023,
+          30.448674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.177734,
+          30.600094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.485352,
+          30.145127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.946289,
+          30.410782
+        ]
+      }
+    }
+  ]
+}

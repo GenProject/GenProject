@@ -1,0 +1,1098 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Sweet Flower",
+        "description": "Top of rock"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.109375,
+          -48.487486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.416992,
+          -55.103516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.041992,
+          -52.855864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.822266,
+          -52.079506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.537109,
+          -51.234407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.097656,
+          -52.160455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.680664,
+          -50.120578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.295898,
+          -49.15297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.339844,
+          -49.724479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.47168,
+          -48.545705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.74707,
+          -50.289339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.40625,
+          -50.875311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.010742,
+          -51.835778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.131836,
+          -52.348763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.115234,
+          -46.164614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.467773,
+          -47.813155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.556641,
+          -48.545705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.776367,
+          -48.951366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.885742,
+          -50.930738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.040039,
+          -50.958427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.038086,
+          -51.069017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.532227,
+          -50.597186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.070313,
+          -51.399206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.37793,
+          -52.589701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.576172,
+          -48.632909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.333984,
+          -48.107431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.652344,
+          -50.007739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.200195,
+          -48.806863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.563477,
+          -49.353756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.135742,
+          -45.95115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.388672,
+          -46.679594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.729492,
+          -47.783635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.741211,
+          -47.635784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.862305,
+          -47.428087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.543945,
+          -47.487513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.851563,
+          -48.748945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.895508,
+          -49.696062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.125977,
+          -49.468124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.62207,
+          -46.13417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.303711,
+          -43.068888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.841797,
+          -43.516689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.489258,
+          -42.130821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.884766,
+          -41.705729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.643555,
+          -40.880295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.818359,
+          -43.961191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.466797,
+          -44.995883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.522461,
+          -43.389082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.292969,
+          -34.415973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.632813,
+          -30.259067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.797852,
+          -29.840644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.006836,
+          -30.372875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.623047,
+          -29.916852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.407227,
+          44.840291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.374023,
+          44.370987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.989258,
+          44.871443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.746094,
+          37.09024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.201172,
+          64.848937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.188477,
+          66.302205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.319336,
+          67.592475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.133789,
+          68.285651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.342773,
+          67.067433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.707031,
+          65.98227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78418,
+          65.016506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.027344,
+          60.152442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.698242,
+          64.129784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.722656,
+          60.305185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.668945,
+          62.062733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.780273,
+          62.083315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.449219,
+          -43.325178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.288086,
+          -13.880746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.446289,
+          56.583692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.083008,
+          59.130863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.194336,
+          66.82652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.6875,
+          68.220523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.160156,
+          65.201468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.994141,
+          69.488372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.533203,
+          58.995311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.729492,
+          60.522158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.047852,
+          59.153403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.026367,
+          56.389584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.43457,
+          51.808615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.643555,
+          50.007739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.830078,
+          49.582226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.597656,
+          54.41893
+        ]
+      }
+    }
+  ]
+}

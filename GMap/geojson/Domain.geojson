@@ -1,0 +1,252 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cecilia Garden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.842773,
+          58.378679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Clear Pool and Mountain Cavern"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.847656,
+          15.538376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Confront Stormterror"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.69043,
+          68.608521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Domain of Forsaken Ruins"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.458984,
+          -35.245619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Domain of Guyun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.601563,
+          -60.930432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Domain of the Wayward Path"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.294922,
+          -68.040461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eagle's Gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.643555,
+          17.350638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Enter the Golden House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.72168,
+          -74.211983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forsaken Rift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.382813,
+          35.817813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hidden Palace of Guizang Formula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -30.9375,
+          -47.457809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hidden Palace of Lianshan Formula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.257813,
+          -16.804541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hidden Palace of Zhou Formula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.115234,
+          36.527295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midsummer Courtyard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.274414,
+          64.848937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peak of Vindagnyr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.251953,
+          0.966751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Taishan Mansion"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.554688,
+          -21.125498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Temple of the Falcon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.774414,
+          54.470038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Temple of the Lion"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.155273,
+          34.813803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Temple of the Wold"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.196289,
+          55.329144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valley of Remembrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.803711,
+          36.70366
+        ]
+      }
+    }
+  ]
+}

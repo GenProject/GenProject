@@ -1,0 +1,603 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.719727,
+          -42.293564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.027344,
+          -42.358544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.719727,
+          -43.229195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.720703,
+          -40.480381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.541992,
+          63.898731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.473633,
+          66.390361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.737305,
+          66.964476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.946289,
+          67.322924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.067383,
+          66.739902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.880859,
+          66.895596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.023438,
+          67.776025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.441406,
+          68.056889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.740234,
+          67.118748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.354492,
+          68.253111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          64.160156,
+          63.489767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.09375,
+          63.134503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.24707,
+          62.714462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.817383,
+          62.975198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.994141,
+          59.910976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.533203,
+          60.261617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.931641,
+          55.85065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.063477,
+          56.559482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.283203,
+          60.866312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          63.413086,
+          59.667741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.501953,
+          66.583217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.161133,
+          67.067433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.523438,
+          66.861082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.53418,
+          67.101656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.973633,
+          66.443107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.423828,
+          66.00015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.02832,
+          65.330178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.776367,
+          65.164579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.897461,
+          65.622023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.831055,
+          66.089364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.952148,
+          67.642676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.070313,
+          68.672544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.630859,
+          59.422728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.773438,
+          60.10867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.905273,
+          57.984808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.039063,
+          51.261915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.87207,
+          55.103516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.376953,
+          55.053203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.508789,
+          55.354135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.080078,
+          54.699234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.134766,
+          56.632064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mushroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.239258,
+          49.009051
+        ]
+      }
+    }
+  ]
+}

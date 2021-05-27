@@ -4,826 +4,954 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "* 123",
-        "description": "In a wooden crate next to pole"
+        "_umap_options": {
+          "labelInteractive": false
+        },
+        "name": "Teleport Waypoint",
+        "description": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.749023,
-          -4.937724
+          51.328125,
+          58.96134
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Teleport Waypoint",
+        "description": "Mondstadt Bridge"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -10.962764
+          65.698242,
+          56.438204
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.792969,
-          -11.135287
+          -41.748047,
+          -71.897238
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -37.96875,
-          -11.156845
+          95.405273,
+          72.134678
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.144531,
-          -11.199957
+          95.888672,
+          69.131271
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with all the urns"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -38.276367,
-          -11.22151
+          74.487305,
+          70.020587
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with tent"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.237305,
-          -18.583776
+          88.461914,
+          59.534318
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.808594,
-          -17.790535
+          89.736328,
+          48.603858
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.664551,
-          -25.700938
+          51.152344,
+          49.325122
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with stuff on the table"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -68.005371,
-          -26.411551
+          53.481445,
+          40.946714
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -67.258301,
-          -26.214591
+          43.857422,
+          58.493694
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urns"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.006836,
-          -27.508271
+          30.717773,
+          55.875311
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -41.550293,
-          -21.207459
+          22.5,
+          59.489726
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with broken wagon"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -42.583008,
-          -21.022983
+          -2.197266,
+          61.856149
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with barrel"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -39.331055,
-          -20.61222
+          11.865234,
+          44.056012
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the basket"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -88.681641,
-          1.120534
+          25.532227,
+          67.033163
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -87.758789,
-          1.493971
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -60.556641,
-          13.218556
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -60.402832,
-          13.624633
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken wagon"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -45.351562,
-          2.526037
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -23.24707,
-          -5.11283
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -20.456543,
-          4.258768
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the chest stand"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -19.907227,
-          4.499762
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.85498,
-          27.605671
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crates in the back."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -30.19043,
-          38.651198
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the jars."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -36.342773,
-          37.09024
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the crate."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -38.891602,
-          37.614231
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the urn almost at the top of the mountain near the bridge. Use the teleporter on Mt. Aozang to get here."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.064453,
-          -4.915833
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden crate almost at the top of the mountain. Use the teleporter on Mt. Aozang to get here."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -96.591797,
-          -5.090944
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -95.668945,
-          -16.214675
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the broken boat."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -33.881836,
-          -6.708254
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the barrel."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -30.629883,
-          -6.926427
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the wooden shack."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -48.47168,
-          -9.709057
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.361328,
-          12.382928
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          5.471191,
-          12.189704
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks and books in the tent."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           5.229492,
-          12.168226
+          71.25848
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          30.014648,
-          6.926427
+          -15.820313,
+          73.677264
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.882813,
-          7.231699
+          -20.126953,
+          66.981666
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Inside cave. Interact with the barrels and crates."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          29.729004,
-          7.013668
+          -6.943359,
+          68.576441
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.450195,
-          -8.754795
+          84.155273,
+          24.766785
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          46.274414,
-          -8.646196
+          117.421875,
+          23.644524
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.74707,
-          -9.058702
+          -11.90918,
+          30.448674
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Underground. Interact with the bookcases."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          45.65918,
-          -8.841651
+          -17.182617,
+          35.353216
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with urn."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -50.932617,
-          38.68551
+          9.448242,
+          9.31899
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with crate next to Pops Zhou."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -15.117188,
-          30.259067
+          -28.256836,
+          23.926013
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the table."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -6.547852,
-          25.562265
+          -49.394531,
+          28.381735
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.503906,
-          -25.244696
+          -46.933594,
+          40.946714
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpacks on the ground inside the tent."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          6.61377,
-          -25.522615
+          -32.036133,
+          39.97712
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "Interact with the backpack on the ground inside the tent."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -49.306641,
-          -69.790341
+          -74.707031,
+          30.145127
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -63.435059,
-          -38.908133
+          -65.302734,
+          9.622414
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -62.62207,
-          -36.544949
+          -42.626953,
+          2.284551
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with pouch"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.698242,
-          15.114553
+          -19.248047,
+          -8.667918
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the red satchel"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.456543,
-          15.178181
+          -61.171875,
+          -4.477856
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the backpack"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.950684,
-          14.604847
+          -19.6875,
+          -27.137368
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with backpack on the ground."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.551758,
-          5.397273
+          -52.382812,
+          -25.005973
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder (12h)",
-        "description": "Interact with the wooden rubble."
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -61.303711,
-          -38.030786
+          -69.345703,
+          -22.998852
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Zhang Shun is an NPC in Liyue Harbor who sells 2-star Lucky Dog (Artifact Set) pieces. His stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Zhang_Shun\">Check this NPC on wiki</a>"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.995117,
-          -65.58572
+          -81.518555,
+          -28.613459
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor",
-        "description": "Shiliu is an NPC in Mondstadt that sells 2-star Adventurer (Artifact Set) pieces. Her stock refreshes every 7 days. You can buy 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Shiliu\">Check this NPC on wiki</a>"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          53.569336,
-          59.400365
+          -105.424805,
+          -17.895114
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Artifact Vendor (Night)",
-        "description": "Linlang is an NPC found in Liyue Harbor, Liyue. Her shop, Xigu Antiques, is only open at nighttime from <b>19:00</b> to <b>05:59</b>. Her stock refreshes every 7 days. You can buy a total of 5 Artifacts for 2000 mora each.<br><br><a href=\"https://genshin-impact.fandom.com/wiki/Linlang\">Check this NPC on wiki</a>"
+        "name": "Teleport Waypoint"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -19.80835,
-          -68.395135
+          -93.955078,
+          1.054628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.726563,
+          0.087891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.111328,
+          -11.264612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.164063,
+          -21.043491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.773438,
+          -32.398516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.722656,
+          -3.337954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.042969,
+          -41.442726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -28.652344,
+          -42.228517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.582031,
+          -55.37911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.314453,
+          -59.310768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -67.5,
+          -45.828799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.135742,
+          -53.722717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.771484,
+          -60.370429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.339844,
+          -45.890008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.847656,
+          -54.41893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.776367,
+          -67.659386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.603516,
+          -68.204212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -30.849609,
+          -68.911005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.972656,
+          -66.407955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.908203,
+          -69.778952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.830078,
+          -75.453071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.558594,
+          -34.921971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.352539,
+          -5.615986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.582031,
+          0.878872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.608398,
+          -9.535749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.862305,
+          8.05923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.519531,
+          12.340002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.0625,
+          -9.579084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.458008,
+          0.219726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.222656,
+          -11.307708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.438477,
+          14.349548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.282227,
+          17.936929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.706055,
+          24.926295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teleport Waypoint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          66.401367,
+          31.914868
         ]
       }
     }

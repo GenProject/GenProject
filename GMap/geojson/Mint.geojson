@@ -1,0 +1,525 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.219727,
+          -50.903033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.867188,
+          -52.829321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.932617,
+          -72.893802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.984375,
+          -48.603858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.182617,
+          -48.922499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.073242,
+          -50.597186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.376953,
+          -48.253941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.838867,
+          -47.338823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.556641,
+          -45.39845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.170898,
+          -44.777936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.742188,
+          -29.458731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.545898,
+          -34.161818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.348633,
+          -32.175612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.427734,
+          -36.633162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -29.355469,
+          42.55308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.188477,
+          43.261206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.935547,
+          43.261206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.921875,
+          37.71859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.823242,
+          28.72913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.616211,
+          24.766785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.133789,
+          23.402765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -40.297852,
+          20.96144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.62793,
+          66.035873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.290039,
+          65.201468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          62.578125,
+          55.40407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.425781,
+          56.800878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.913086,
+          -6.577303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.253906,
+          -5.834616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.701172,
+          23.966176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.21582,
+          64.187249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.115234,
+          59.040555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.861328,
+          59.667741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.432617,
+          59.778522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.280273,
+          52.855864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.807617,
+          52.696361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.203125,
+          51.096623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.366211,
+          55.553495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.969727,
+          55.85065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.90918,
+          51.399206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mint"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.582031,
+          48.57479
+        ]
+      }
+    }
+  ]
+}
