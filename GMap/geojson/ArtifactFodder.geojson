@@ -4,8 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "* Artifact Fodder",
-        "description": "In a wooden crate next to pole"
+        "name": "* Артефакт (еда)",
+        "description": "В деревянном ящике рядом с столбом"
       },
       "geometry": {
         "type": "Point",
