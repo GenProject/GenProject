@@ -1,5 +1,12 @@
 /* required styles */
-
+ * {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+ 
 .leaflet-pane,
 .leaflet-tile,
 .leaflet-marker-icon,
@@ -267,7 +274,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* general typography */
 .leaflet-container {
-	font: 16px/1.5 "Helvetica Neue", Bahnschrift, Helvetica, sans-serif; color: "red";
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 15px rgba(206,89,55,0);
+color: #FFFFFF;
+	font: 16px/1.5 "Helvetica Neue", Bahnschrift, Helvetica, sans-serif;
 	}
 
 
@@ -347,7 +356,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-radius: 5px;
 	}
 .leaflet-control-layers-toggle {
-	background-image: url(images/favicon-32x32.png);
+	background-image: url(images/layers.png);
 	width: 36px;
 	height: 36px;
 	}
