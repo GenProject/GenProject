@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.961914,
+          -43.548548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.445313,
+          -43.802819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.786133,
+          -43.897892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.603516,
+          -36.985003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.97168,
+          53.67068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.977539,
+          36.244273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.615234,
+          33.28462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.734375,
+          35.137879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flaming Flower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.394531,
+          40.480381
+        ]
+      }
+    }
+  ]
+}

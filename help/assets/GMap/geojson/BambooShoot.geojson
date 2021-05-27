@@ -1,0 +1,148 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.691406,
+          37.405074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.603516,
+          37.195331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.735352,
+          35.137879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50.273438,
+          34.669359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.955078,
+          33.760882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.086914,
+          32.990236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50.712891,
+          32.546813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50.009766,
+          31.728167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.702148,
+          31.316101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.130859,
+          31.015279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamboo Shoot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.768555,
+          27.683528
+        ]
+      }
+    }
+  ]
+}

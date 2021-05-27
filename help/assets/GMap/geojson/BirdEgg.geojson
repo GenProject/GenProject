@@ -1,0 +1,407 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.779785,
+          3.019841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of stone arch."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.458008,
+          -62.288365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.216797,
+          -4.105369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.062988,
+          -3.995781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.392578,
+          -3.995781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.216797,
+          -3.886177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.041016,
+          -3.776559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.216797,
+          -3.688855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.392578,
+          -3.776559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.524414,
+          -3.886177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Half way up mountain on the wall."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.381592,
+          -55.677584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.463867,
+          68.289716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.463867,
+          68.289716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.050049,
+          66.035873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.050049,
+          66.035873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.779785,
+          3.019841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg",
+        "description": "Top of the inn, on the tree."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.995117,
+          -8.581021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of the inn, on the tree."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.995117,
+          -8.581021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of the inn, on the tree."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.357666,
+          -8.037473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of the inn, on the tree."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.357666,
+          -8.037473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of the inn, on the roof."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.907227,
+          -7.188101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of the inn, on the roof."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.907227,
+          -7.188101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of the inn, on the roof."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.14917,
+          -8.200616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of the inn, on the roof."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.14917,
+          -8.200616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -25.048828,
+          2.504085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -25.048828,
+          2.504085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Top of stone arch."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.458008,
+          -62.288365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -29.630127,
+          6.719165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bird Egg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -29.630127,
+          6.719165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "* Bird Egg",
+        "description": "Half way up mountain on the wall."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.381592,
+          -55.677584
+        ]
+      }
+    }
+  ]
+}

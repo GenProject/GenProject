@@ -62,7 +62,7 @@
 			if (feature.properties && feature.properties.name && feature.properties.description) {
 				layer.bindPopup("<center><b> " + feature.properties.name + "</center></b><br>" + feature.properties.description);
 			}
-			if (feature.properties && feature.properties.name && feature.properties.description && feature.properties.name.startsWith("* Teleport") ){
+			if (feature.properties && feature.properties.name && feature.properties.description && feature.properties.name.startsWith("* Телепорт") ){
 				layer.setStyle({
 					color: "LightSkyBlue",
 					dashArray: 10,
@@ -405,7 +405,7 @@
 	//-Expand/Minimize
 
 		// geoJSON URL'S
-		var ArtifactFodderURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/ArtifactFodder.geojson"
+		var ArtifactFodderURL 			= "assets/GMap/geojson/ArtifactFodder.geojson"
 
 		// Stuff for CustomMarkerIcon
 		var ArtifactFodderIcon = L.icon({
@@ -1588,7 +1588,7 @@
 
     	// Overlay Menu top left
     	var mapOverlays={
-		"Фарм Артефактов"								: FarmRouteArtifactGroup,		
+		"Фарм Артефактов"							    : FarmRouteArtifactGroup,		
 		"Фарм Монстров"								    : FarmRouteEliteEnemiesGroup,
 		"Фарм Минералов"							    : FarmRouteMineralGroup,
 		"Электро кристалл"								: ElectroCrystal,
@@ -1609,7 +1609,7 @@
 		"Мята"											: Mint,
 		"Ягода"											: Berry,
 		"Яйца"										    : BirdEgg,
-		"Заоблочный персик"								: JueyunChili,
+		"Заоблочный перчик"								: JueyunChili,
 		"Цветок Синсин"									: FarmRouteQingxinGroup,
 		"Лотус"									        : LotusHead,
 		"Мясо"										    : RawMeat,
@@ -1617,6 +1617,7 @@
 		"Рыба"											: Fish,
 		"Краб"											: Crab,
 		}
+
 
 		var layerControl = L.control.layers(null, mapOverlays, {position:'topright'}).addTo(map);
 

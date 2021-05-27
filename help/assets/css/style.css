@@ -69,9 +69,6 @@ html, body, #mapid {
   background: #000;
 }
 
-#mapid, .leaflet-interactive, .leaflet-tooltip.leaflet-clickable {
-  cursor: url(../../media/icones/paimon.cur), pointer !important;
-}
 
 .display-none {
   display: none;
