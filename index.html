@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="scripts/MarkerCluster.css?ver=1.0">
     <link rel="stylesheet" href="scripts/all.min.css?ver=1.0"> <!-- Font Awesome Free 5.15.1 -->
     <script src="scripts/leaflet.js"></script>
-    <script src="scripts/Leaflet.LocationShare.js"></script>
     <script src="scripts/leaflet.ajax.min.js"></script>
     <script src="scripts/leaflet-heat.js"></script>
     <script src="scripts/L.Path.DashFlow.js"></script>
@@ -35,7 +34,7 @@
 	//----------------------------------------------------------------------------------------------------------------------
 	//-Expand/Minimize
 		// Creating the Map
-		var map = L.map('map').setView([-69.3, -35.9], 4);  // Mt. Tianheng
+		var map = L.map('map').setView([0, 0], 0);  // Mt. Tianheng
 
 		map.createPane('CustomPane');
 		map.getPane('CustomPane').style.zIndex = 600; // Needed in order to put markers in front of farm route lines
@@ -50,14 +49,6 @@
 		maxNativeZoom: 5,
 		updateInterval: 200,
 	    }).addTo(map);
-
-	    // Remove old zoomControl and add new one.
-	    map.zoomControl.remove();
-	    L.control.zoom({
-	    position: 'bottomright'
-		}).addTo(map);
-
-		var myRenderer = L.svg({ opacity: 0.25 });
 
 		// OnEachFeature function
 		function oef(feature, layer) {
@@ -1480,7 +1471,7 @@
 
 		// Stuff for lines
 		var EliteEnemiesLines = {
-    	"color": "firebrick",
+    	"color": "green",
     	"weight": 4,
     	"dashArray": 8,
     	"dashSpeed": -30,
@@ -1591,49 +1582,43 @@
     	Teleport,
     	Statue,
     	Domain,
-    	FarmRouteEliteEnemiesGroup,
     	])
 
     	DefaultShow.addTo(map)
 
     	// Overlay Menu top left
     	var mapOverlays={
-		"Телепорт"										: Teleport,
-		"Statue"										: Statue,
-		"Domain"										: Domain,
-		"Cave"											: Cave,
-		"Chest"											: Chest,
-		"Artifact Fodder"								: FarmRouteArtifactGroup,
-		"Elite Enemies"									: FarmRouteEliteEnemiesGroup,
-		"Farm Route Mineral"							: FarmRouteMineralGroup,
-		"Electro Crystal"								: ElectroCrystal,
-		"Noctilucous Jade"								: NoctilucousJade,
-		"Cor Lapis"										: CorLapis,
-		"Crystal Chunk"									: CrystalChunk,
-		"Magical Crystal Chunk"							: MagicalCrystalChunk,
-		"White Iron Chunk"								: WhiteIronChunk,
-		"Wolfhook"										: Wolfhook,
-		"Small Lamp Grass"								: SmallLampGrass,
-		"Valberry"										: Valberry,
-		"Cecilia"										: Cecilia,
-		"Starconch"										: Starconch,
-		"Bamboo Shoot"									: BambooShoot,
-		"Mushroom"										: Mushroom,
-		"Sweet Flower"									: SweetFlower,
-		"Dandelion Seed"								: DandelionSeed,
-		"Mint"											: Mint,
-		"Berry"											: Berry,
-		"Bird Egg"										: BirdEgg,
-		"Jueyun Chili"									: JueyunChili,
-		"Qingxin"										: FarmRouteQingxinGroup,
-		"Lotus Head"									: LotusHead,
-		"Raw Meat"										: RawMeat,
-		"Fowl"											: Fowl,
-		"Fish"											: Fish,
-		"Crab"											: Crab,
+		"Фарм Артефактов"								: FarmRouteArtifactGroup,		
+		"Фарм Монстров"								    : FarmRouteEliteEnemiesGroup,
+		"Фарм Минералов"							    : FarmRouteMineralGroup,
+		"Электро кристалл"								: ElectroCrystal,
+		"Полуночный нефрит"								: NoctilucousJade,
+		"Кор Ляпис"										: CorLapis,
+		"Обломок кристалла"								: CrystalChunk,
+		"Магический кристальный обломок"				: MagicalCrystalChunk,
+		"Обломок белого железа"							: WhiteIronChunk,
+		"Волчий крюк"									: Wolfhook,
+		"Трава Светяшка"								: SmallLampGrass,
+		"Валяшка"										: Valberry,
+		"Сесилия"										: Cecilia,
+		"Звездная ракушка"								: Starconch,
+		"Побеги бамбука"								: BambooShoot,
+		"Гриб"										    : Mushroom,
+		"Цветок сахарок"								: SweetFlower,
+		"Одуванчик"								        : DandelionSeed,
+		"Мята"											: Mint,
+		"Ягода"											: Berry,
+		"Яйца"										    : BirdEgg,
+		"Заоблочный персик"								: JueyunChili,
+		"Цветок Синсин"									: FarmRouteQingxinGroup,
+		"Лотус"									        : LotusHead,
+		"Мясо"										    : RawMeat,
+		"Птица"											: Fowl,
+		"Рыба"											: Fish,
+		"Краб"											: Crab,
 		}
 
-		var layerControl = L.control.layers(null, mapOverlays, {position:'topleft'}).addTo(map);
+		var layerControl = L.control.layers(null, mapOverlays, {position:'topright'}).addTo(map);
 
     </script>
   </body>

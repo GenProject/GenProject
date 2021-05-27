@@ -267,7 +267,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* general typography */
 .leaflet-container {
-	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font: 16px/1.5 "Helvetica Neue", Bahnschrift, Helvetica, sans-serif; color: "red";
 	}
 
 
@@ -344,11 +344,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-control-layers {
 	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-	background: #fff;
 	border-radius: 5px;
 	}
 .leaflet-control-layers-toggle {
-	background-image: url(images/layers.png);
+	background-image: url(images/favicon-32x32.png);
 	width: 36px;
 	height: 36px;
 	}
@@ -357,8 +356,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	background-size: 26px 26px;
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
-	width: 44px;
-	height: 44px;
+	width: 56px;
+	height: 56px;
 	}
 .leaflet-control-layers .leaflet-control-layers-list,
 .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
@@ -369,17 +368,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	position: relative;
 	}
 .leaflet-control-layers-expanded {
-	padding: 6px 10px 6px 6px;
+	padding: 20px 10px 10px 20px;
 	color: #333;
 	background: #fff;
+    border-radius: 40px;
 	}
 .leaflet-control-layers-scrollbar {
 	overflow-y: scroll;
 	overflow-x: hidden;
-	padding-right: 5px;
+	padding-right: 15px;
 	}
 .leaflet-control-layers-selector {
-	margin-top: 2px;
+	margin-top: 6px;
+	cursor: pointer;
 	position: relative;
 	top: 1px;
 	}
