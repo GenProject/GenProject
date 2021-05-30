@@ -1,1630 +1,1625 @@
 <!DOCTYPE html>
 <html = style="height: 100%;">
-<meta charset="utf-8">
-  <head>
-    <title>Genshin Impact Resource Search Map</title>
-    <link rel="icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scripts/leaflet.css?ver=1.0">
-    <link rel="stylesheet" href="scripts/MarkerCluster.css?ver=1.0">
-    <link rel="stylesheet" href="scripts/all.min.css?ver=1.0"> <!-- Font Awesome Free 5.15.1 -->
-    <script src="scripts/leaflet.js"></script>
-    <script src="scripts/leaflet.ajax.min.js"></script>
-    <script src="scripts/leaflet-heat.js"></script>
-    <script src="scripts/L.Path.DashFlow.js"></script>
-    <script src="scripts/leaflet.markercluster.js"></script>
-  </head>
-  
-  <body style="height: 100%;margin: 0;">
-    <div id="map" style="width: 100%; height: 100%; background: #000000;"></div>
-
-
-
-	<!-- Workaround for 1px lines appearing in some browsers due to fractional transforms
-    and resulting anti-aliasing.-->
-	<style>
-
-	.leaflet-tile-container img {
-	width: 256.5px !important;
-	height: 256.5px !important;
-	}
-
-	</style>
-    <script type="text/javascript">
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------- Main ---------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-		// Creating the Map
-		var map = L.map('map').setView([0, 0], 0);  // Mt. Tianheng
-
-		map.createPane('CustomPane');
-		map.getPane('CustomPane').style.zIndex = 600; // Needed in order to put markers in front of farm route lines
-
-	    L.tileLayer('maps/teyvat/{z}/{x}/{y}.png', {
-	    continuousWorld: false,
-	    noWrap: true,
-	    minZoom: 3,
-	    maxZoom: 6,
-	    zoomControl: false,
-		minNativeZoom: 3,
-		maxNativeZoom: 5,
-		updateInterval: 200,
-	    }).addTo(map);
-
-		// OnEachFeature function
-		function oef(feature, layer) {
-			if (feature.properties && feature.properties.name) {
-				layer.bindTooltip(feature.properties.name, {
-					opacity: 1.00,
-					direction: 'top',
-					offset: [0, -7]
-				});
-			}
-			if (feature.properties && feature.properties.name && feature.properties.description) {
-				layer.bindPopup("<center><b> " + feature.properties.name + "</center></b><br>" + feature.properties.description);
-			}
-			if (feature.properties && feature.properties.name && feature.properties.description && feature.properties.name.startsWith("* Телепорт") ){
-				layer.setStyle({
-					color: "LightSkyBlue",
-					dashArray: 10,
-					weight: 3,
-				});
-			}
-		}
-
-		// OnEachFeature2 function
-		function oef2(feature, layer) {
-			if (feature.properties && feature.properties.name) {
-				layer.bindTooltip(feature.properties.name, {
-					opacity: 1.00,
-					direction: 'top',
-					offset: [0, -7]
-				});
-			}
-			if (feature.properties && feature.properties.name && feature.properties.description) {
-				layer.bindPopup("<center><b> " + feature.properties.name + "</center></b><br>" + feature.properties.description);
-			}
-			if (feature.properties && feature.properties.name.endsWith("Mitachurl") ){
-				layer.setIcon(MitachurlIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Ruin Guard") ){
-				layer.setIcon(RuinGuardIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Ruin Grader") ){
-				layer.setIcon(RuinGraderIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Ruin Hunter") ){
-				layer.setIcon(RuinHunterIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Hydro Abyss Mage") ){
-				layer.setIcon(HydroAbyssMageIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Cryo Abyss Mage") ){
-				layer.setIcon(CryoAbyssMageIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Pyro Abyss Mage") ){
-				layer.setIcon(PyroAbyssMageIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Fatui Pyro Agent") ){
-				layer.setIcon(FatuiPyroAgentIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Fatui Electro Cicin Mage") ){
-				layer.setIcon(FatuiElectroCicinMageIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Fatui Cryo Cicin Mage") ){
-				layer.setIcon(FatuiCryoCicinMageIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Geovishap Hatchling") ){
-				layer.setIcon(GeovishapHatchlingIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Stonehide Lawachurl") ){
-				layer.setIcon(StonehideLawachurlIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Frostarm Lawachurl") ){
-				layer.setIcon(FrostarmLawachurlIcon);
-				};
-			}
-
-		// OnEachFeatureChest function
-		function oefChest(feature, layer) {
-			if (feature.properties && feature.properties.name) {
-				layer.bindTooltip(feature.properties.name, {
-					opacity: 1.00,
-					direction: 'top',
-					offset: [0, -7],
-				});
-			}
-			if (feature.properties && feature.properties.name && feature.properties.description) {
-				layer.bindPopup("<center><b> " + feature.properties.name + "</center></b><br>" + feature.properties.description);
-			}
-			if (feature.properties && feature.properties.name.endsWith("Common Chest") ){
-				layer.setIcon(ChestCommonIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Exquisite Chest") ){
-				layer.setIcon(ChestExquisiteIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Precious Chest") ){
-				layer.setIcon(ChestPreciousIcon);
-				};
-			if (feature.properties && feature.properties.name.endsWith("Luxurious Chest") ){
-				layer.setIcon(ChestLuxuriousIcon);
-				};
-			}
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//--------------------------------------------- Info Button ------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------------- Teleport -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var TeleportURL 		= "https://genproject.github.io/GMap/geojson/Teleport.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var TeleportIcon = L.icon({
-		iconUrl: 'markers/TeleportMarker.png',
-		iconSize:      [18, 26],	// size of the icon
-		iconAnchor:    [9, 13],		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarker
-		function TeleportMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			//To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: TeleportIcon});
-		}
-		
-		// Load .geoJSON
-		var Teleport			= new L.GeoJSON.AJAX([TeleportURL],{pointToLayer:TeleportMarker,onEachFeature:oef}); //.addTo(map)
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------ Statue --------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var StatueURL 					= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Statue.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var StatueIcon = L.icon({
-		iconUrl: 'markers/StatueMarker.png',
-		iconSize:      [24, 34],	// size of the icon
-		iconAnchor:    [12, 17],	// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarker
-		function StatueMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: StatueIcon});
-		}
-		
-		// Load .geoJSON
-		var Statue						= new L.GeoJSON.AJAX([StatueURL],{pointToLayer:StatueMarker,onEachFeature:oef}); //.addTo(map)
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------ Domain --------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var DomainURL 					= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Domain.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var DomainIcon = L.icon({
-		iconUrl: 'markers/DomainMarker.png',
-		iconSize:      [23, 23],	// size of the icon
-		iconAnchor:    [11.5, 11.5],	// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarker
-		function DomainMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: DomainIcon});
-		}
-		
-		// Load .geoJSON
-		var Domain						= new L.GeoJSON.AJAX([DomainURL],{pointToLayer:DomainMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------- Cave ---------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-		
-		// geoJSON URL'S
-		var CaveURL 		= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Cave.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var CaveIcon = L.icon({
-		iconUrl: 'markers/CaveMarker.png',
-		iconSize:      [20, 14],	// size of the icon
-		iconAnchor:    [10, 7],		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarker
-		function CaveMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: CaveIcon});
-		}
-
-		// Load .geoJSON
-		var Cave			= new L.GeoJSON.AJAX([CaveURL],{pointToLayer:CaveMarker,onEachFeature:oef}); //.addTo(map)
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//-------------------------------------------- Marker Settings ---------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-		
-		// All Other
-		var GlobalMarkerIconSize 			= [20, 20]
-		var GlobalMarkerIconAnchor 			= [10, 10]
-		var GlobalMarkerIconPopupAnchor 	= [0, -12]
-		var GlobalMarkerIconTooltipAnchor 	= [0, -5]
-
-		//var GlobalMarkerShadowIconUrl		= 'markers/MarkerShadow.png'
-		var GlobalMarkerShadowIconUrl		= ''
-		var GlobalMarkerShadowSize			= [20, 20]
-		var GlobalMarkerShadowAnchor		= [10, 8]
-
-
-
-
-
-		// Elite
-		var EliteEnemiesIconSize 			= [30, 30]
-		var EliteEnemiesIconAnchor 			= [15, 15]
-		var EliteEnemiesIconPopupAnchor 	= [0, -12]
-		var EliteEnemiesIconTooltipAnchor 	= [0, -5]
-
-		//var EliteEnemiesShadowIconUrl		= 'markers/enemies/EliteEnemiesShadowMarker.png'
-		var EliteEnemiesShadowIconUrl		= ''
-		var EliteEnemiesShadowSize			= [30, 30]
-		var EliteEnemiesShadowAnchor		= [15, 11]
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------ Chest ---------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var ChestURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Chest.geojson"
-		//var ChestFarmRouteURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteChest.geojson"
-
-		/*
-		// Stuff for CircleMarker
-		function ChestMarker(feature, latlng){
-		let options = {
-		radius: 5,
-		fillColor: "saddlebrown", 	// ChestColor
-		color: "white",				// Stroke Color
-		weight: 1,					// Stroke Weight
-		opacity: 0.95,				// Stroke Opacity
-		fillOpacity: 0.95,
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.circleMarker(latlng, options);
-		}
-		*/
-
-		var ChestIconSize 			= [30, 30] //[24, 24]
-		var ChestIconAnchor 		= [15, 15] //[12, 12]
-		var ChestIconPopupAnchor 	= [0, -12]
-		var ChestIconTooltipAnchor 	= [0, -5]
-
-		// Stuff for CustomMarkerIcon
-		var ChestIcon = L.icon({
-		iconUrl: 		'markers/chest/ChestMarker.png',
-		iconSize:     	 ChestIconSize,				// size of the icon
-		iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarkerIcon
-		var ChestCommonIcon = L.icon({
-		iconUrl: 		'markers/chest/ChestCommon.png',
-		iconSize:     	 ChestIconSize,				// size of the icon
-		iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarkerIcon
-		var ChestExquisiteIcon = L.icon({
-		iconUrl: 		'markers/chest/ChestExquisite.png',
-		iconSize:     	 ChestIconSize,				// size of the icon
-		iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarkerIcon
-		var ChestPreciousIcon = L.icon({
-		iconUrl: 		'markers/chest/ChestPrecious.png',
-		iconSize:     	 ChestIconSize,				// size of the icon
-		iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarkerIcon
-		var ChestLuxuriousIcon = L.icon({
-		iconUrl: 		'markers/chest/ChestLuxurious.png',
-		iconSize:     	 ChestIconSize,				// size of the icon
-		iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		});
-
-		// Stuff for CustomMarker
-		function ChestMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane',			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: ChestIcon});
-		}
-
-		/*
-		// Stuff for lines
-		var ChestLines = {
-    	"color": "#b22222",
-    	"weight": 5,
-    	"opacity": 0.95
-		};
-		*/
-
-		// Load .geoJSON
-		var Chest 				= new L.GeoJSON.AJAX([ChestURL],{pointToLayer:ChestMarker,onEachFeature:oefChest});
-		//var ChestFarmRoute 	= new L.GeoJSON.AJAX([ChestFarmRouteURL],{style:ChestLines,onEachFeature:oef});
-
-	//*----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------- Artifact Fodder ----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var ArtifactFodderURL 			= "https://genproject.github.io/GMap/geojson/ArtifactFodder.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var ArtifactFodderIcon = L.icon({
-		iconUrl:      'markers/ArtifactFodderMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-
-		/*/ Stuff for CustomMarkerIcon
-		var ArtifactFodderIcon = L.icon({
-		iconUrl:        'markers/ArtifactFodderMarker.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});*/
-
-
-		// Stuff for CustomMarker
-		function ArtifactFodderMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: ArtifactFodderIcon});
-		}
-
-		// Load .geoJSON
-		var ArtifactFodder 				= new L.GeoJSON.AJAX([ArtifactFodderURL],{pointToLayer:ArtifactFodderMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------- Electro Crystal ----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var ElectroCrystalURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/ElectroCrystal.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var ElectroCrystalIcon = L.icon({
-		iconUrl: 'markers/ElectroCrystalMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function ElectroCrystalMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: ElectroCrystalIcon});
-		}
-
-		// Load .geoJSON
-		var ElectroCrystal 				= new L.GeoJSON.AJAX([ElectroCrystalURL],{pointToLayer:ElectroCrystalMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------ Noctilucous Jade ----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var NoctilucousJadeURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/NoctilucousJade.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var NoctilucousJadeIcon = L.icon({
-		iconUrl: 'markers/NoctilucousJadeMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function NoctilucousJadeMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: NoctilucousJadeIcon});
-		}
-
-		// Load .geoJSON
-		var NoctilucousJade 				= new L.GeoJSON.AJAX([NoctilucousJadeURL],{pointToLayer:NoctilucousJadeMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//---------------------------------------------- Cor Lapis -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var CorLapisURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/CorLapis.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var CorLapisIcon = L.icon({
-		iconUrl: 'markers/CorLapisMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function CorLapisMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: CorLapisIcon});
-		}
-
-		// Load .geoJSON
-		var CorLapis 				= new L.GeoJSON.AJAX([CorLapisURL],{pointToLayer:CorLapisMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//-------------------------------------------- Crystal Chunk -----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var CrystalChunkURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/CrystalChunk.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var CrystalChunkIcon = L.icon({
-		iconUrl:      'markers/CrystalChunkMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function CrystalChunkMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: CrystalChunkIcon});
-		}
-
-		// Load .geoJSON
-		var CrystalChunk 			= new L.GeoJSON.AJAX([CrystalChunkURL],{pointToLayer:CrystalChunkMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//---------------------------------------- Magical Crystal Chunk -------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var MagicalCrystalChunkURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/MagicalCrystalChunk.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var MagicalCrystalChunkIcon = L.icon({
-		iconUrl: 'markers/MagicalCrystalChunkMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function MagicalCrystalChunkMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: MagicalCrystalChunkIcon});
-		}
-
-		// Load .geoJSON
-		var MagicalCrystalChunk 			= new L.GeoJSON.AJAX([MagicalCrystalChunkURL],{pointToLayer:MagicalCrystalChunkMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------- White Iron Chunk ---------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var WhiteIronChunkURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/WhiteIronChunk.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var WhiteIronChunkIcon = L.icon({
-		iconUrl: 'markers/WhiteIronChunkMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function WhiteIronChunkMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: WhiteIronChunkIcon});
-		}
-
-		// Load .geoJSON
-		var WhiteIronChunk 			= new L.GeoJSON.AJAX([WhiteIronChunkURL],{pointToLayer:WhiteIronChunkMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------------- Wolfhook -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var WolfhookURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Wolfhook.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var WolfhookIcon = L.icon({
-		iconUrl: 'markers/WolfhookMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function WolfhookMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: WolfhookIcon});
-		}
-
-		// Load .geoJSON
-		var Wolfhook 			= new L.GeoJSON.AJAX([WolfhookURL],{pointToLayer:WolfhookMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------------- Valberry -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var ValberryURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Valberry.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var ValberryIcon = L.icon({
-		iconUrl: 'markers/ValberryMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function ValberryMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: ValberryIcon});
-		}
-
-		// Load .geoJSON
-		var Valberry 			= new L.GeoJSON.AJAX([ValberryURL],{pointToLayer:ValberryMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------------- Cecilia -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var CeciliaURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Cecilia.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var CeciliaIcon = L.icon({
-		iconUrl: 'markers/CeciliaMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function CeciliaMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: CeciliaIcon});
-		}
-
-		// Load .geoJSON
-		var Cecilia 			= new L.GeoJSON.AJAX([CeciliaURL],{pointToLayer:CeciliaMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------- Small Lamp Grass ---------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var SmallLampGrassURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/SmallLampGrass.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var SmallLampGrassIcon = L.icon({
-		iconUrl: 'markers/SmallLampGrassMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function SmallLampGrassMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: SmallLampGrassIcon});
-		}
-
-		// Load .geoJSON
-		var SmallLampGrass 			= new L.GeoJSON.AJAX([SmallLampGrassURL],{pointToLayer:SmallLampGrassMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//---------------------------------------------- Starconch -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var StarconchURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Starconch.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var StarconchIcon = L.icon({
-		iconUrl: 'markers/StarconchMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function StarconchMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: StarconchIcon});
-		}
-
-		// Load .geoJSON
-		var Starconch 			= new L.GeoJSON.AJAX([StarconchURL],{pointToLayer:StarconchMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//--------------------------------------------- Bamboo Shoot -----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var BambooShootURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/BambooShoot.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var BambooShootIcon = L.icon({
-		iconUrl: 'markers/BambooShootMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function BambooShootMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: BambooShootIcon});
-		}
-
-		// Load .geoJSON
-		var BambooShoot 			= new L.GeoJSON.AJAX([BambooShootURL],{pointToLayer:BambooShootMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------------- Mushroom -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var MushroomURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Mushroom.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var MushroomIcon = L.icon({
-		iconUrl: 'markers/MushroomMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function MushroomMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: MushroomIcon});
-		}
-
-		// Load .geoJSON
-		var Mushroom 			= new L.GeoJSON.AJAX([MushroomURL],{pointToLayer:MushroomMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//--------------------------------------------- Sweet Flower -----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var SweetFlowerURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/SweetFlower.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var SweetFlowerIcon = L.icon({
-		iconUrl: 'markers/SweetFlowerMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function SweetFlowerMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: SweetFlowerIcon});
-		}
-
-		// Load .geoJSON
-		var SweetFlower 			= new L.GeoJSON.AJAX([SweetFlowerURL],{pointToLayer:SweetFlowerMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//-------------------------------------------- Dandelion Seed ----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var DandelionSeedURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/DandelionSeed.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var DandelionSeedIcon = L.icon({
-		iconUrl: 'markers/DandelionSeedMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function DandelionSeedMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: DandelionSeedIcon});
-		}
-
-		// Load .geoJSON
-		var DandelionSeed 			= new L.GeoJSON.AJAX([DandelionSeedURL],{pointToLayer:DandelionSeedMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------- Mint ---------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var MintURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Mint.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var MintIcon = L.icon({
-		iconUrl: 'markers/MintMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function MintMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: MintIcon});
-		}
-
-		// Load .geoJSON
-		var Mint 			= new L.GeoJSON.AJAX([MintURL],{pointToLayer:MintMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------- Berry --------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var BerryURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Berry.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var BerryIcon = L.icon({
-		iconUrl: 'markers/BerryMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function BerryMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: BerryIcon});
-		}
-
-		// Load .geoJSON
-		var Berry 			= new L.GeoJSON.AJAX([BerryURL],{pointToLayer:BerryMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------ Bird Egg ------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var BirdEggURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/BirdEgg.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var BirdEggIcon = L.icon({
-		iconUrl: 'markers/BirdEggMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function BirdEggMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: BirdEggIcon});
-		}
-
-		// Load .geoJSON
-		var BirdEgg 			= new L.GeoJSON.AJAX([BirdEggURL],{pointToLayer:BirdEggMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------ Qingxin -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var QingxinURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Qingxin.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var QingxinIcon = L.icon({
-		iconUrl: 'markers/QingxinMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function QingxinMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: QingxinIcon});
-		}
-
-		// Load .geoJSON
-		var Qingxin 			= new L.GeoJSON.AJAX([QingxinURL],{pointToLayer:QingxinMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//--------------------------------------------- Jueyun Chili -----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var JueyunChiliURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/JueyunChili.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var JueyunChiliIcon = L.icon({
-		iconUrl: 'markers/JueyunChiliMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function JueyunChiliMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: JueyunChiliIcon});
-		}
-
-		// Load .geoJSON
-		var JueyunChili 			= new L.GeoJSON.AJAX([JueyunChiliURL],{pointToLayer:JueyunChiliMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//---------------------------------------------- Lotus Head ------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var LotusHeadURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/LotusHead.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var LotusHeadIcon = L.icon({
-		iconUrl: 'markers/LotusHeadMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function LotusHeadMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: LotusHeadIcon});
-		}
-
-		// Load .geoJSON
-		var LotusHead 			= new L.GeoJSON.AJAX([LotusHeadURL],{pointToLayer:LotusHeadMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------------- Raw Meat -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var RawMeatURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/RawMeat.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var RawMeatIcon = L.icon({
-		iconUrl: 'markers/RawMeatMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function RawMeatMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: RawMeatIcon});
-		}
-
-		// Load .geoJSON
-		var RawMeat 			= new L.GeoJSON.AJAX([RawMeatURL],{pointToLayer:RawMeatMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------- Fowl ---------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var FowlURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Fowl.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var FowlIcon = L.icon({
-		iconUrl: 'markers/FowlMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function FowlMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: FowlIcon});
-		}
-
-		// Load .geoJSON
-		var Fowl 			= new L.GeoJSON.AJAX([FowlURL],{pointToLayer:FowlMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------- Fish ---------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var FishURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Fish.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var FishIcon = L.icon({
-		iconUrl: 'markers/FishMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function FishMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: FishIcon});
-		}
-
-		// Load .geoJSON
-		var Fish 				= new L.GeoJSON.AJAX([FishURL],{pointToLayer:FishMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//------------------------------------------------- Crab ---------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var CrabURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Crab.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var CrabIcon = L.icon({
-		iconUrl: 'markers/CrabMarker.png',
-		iconSize:      GlobalMarkerIconSize,			// size of the icon
-		iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     GlobalMarkerShadowIconUrl,
-		shadowSize:    GlobalMarkerShadowSize,
-		shadowAnchor:  GlobalMarkerShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function CrabMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: CrabIcon});
-		}
-
-		// Load .geoJSON
-		var Crab 					= new L.GeoJSON.AJAX([CrabURL],{pointToLayer:CrabMarker,onEachFeature:oef});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//-------------------------------------------- Elite Enemies -----------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var EliteEnemiesURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/EliteEnemies.geojson"
-
-		// Stuff for CustomMarkerIcon
-		var EliteEnemiesIcon = L.icon({
-		iconUrl: 		'markers/enemies/EliteEnemiesMarker.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var MitachurlIcon = L.icon({
-    	iconUrl: 		'markers/enemies/Mitachurl.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var RuinGuardIcon = L.icon({
-    	iconUrl: 		'markers/enemies/RuinGuard.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var RuinGraderIcon = L.icon({
-    	iconUrl: 		'markers/enemies/RuinGrader.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var RuinHunterIcon = L.icon({
-    	iconUrl: 		'markers/enemies/RuinHunter.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var HydroAbyssMageIcon = L.icon({
-    	iconUrl: 		'markers/enemies/HydroAbyssMage.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var CryoAbyssMageIcon = L.icon({
-    	iconUrl: 		'markers/enemies/CryoAbyssMage.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var PyroAbyssMageIcon = L.icon({
-    	iconUrl: 		'markers/enemies/PyroAbyssMage.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var FatuiPyroAgentIcon = L.icon({
-    	iconUrl: 		'markers/enemies/FatuiPyroAgent.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var FatuiElectroCicinMageIcon = L.icon({
-    	iconUrl: 		'markers/enemies/FatuiElectroCicinMage.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var FatuiCryoCicinMageIcon = L.icon({
-    	iconUrl: 		'markers/enemies/FatuiCryoCicinMage.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var GeovishapHatchlingIcon = L.icon({
-    	iconUrl: 		'markers/enemies/GeovishapHatchling.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var StonehideLawachurlIcon = L.icon({
-    	iconUrl: 		'markers/enemies/StonehideLawachurl.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		var FrostarmLawachurlIcon = L.icon({
-    	iconUrl: 		'markers/enemies/FrostarmLawachurl.png',
-		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
-		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
-		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
-		tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-		
-		shadowUrl:     	 EliteEnemiesShadowIconUrl,
-		shadowSize:      EliteEnemiesShadowSize,
-		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-
-		// Stuff for CustomMarker
-		function EliteEnemiesMarker(feature, latlng){
-		let options = {
-		opacity: 1,					// Marker Opacity
-		pane: 'CustomPane'			// To Adjust Z-Index
-		}
-		return L.marker(latlng, {icon: EliteEnemiesIcon});
-		}
-
-		// Load .geoJSON
-		var EliteEnemies 				= new L.GeoJSON.AJAX([EliteEnemiesURL],{pointToLayer:EliteEnemiesMarker,onEachFeature:oef2});
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//-------------------------------------- Farm Route - Elite Enemies ----------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var FarmRouteEliteEnemiesURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteEliteEnemies.geojson"
-
-		// Stuff for lines
-		var EliteEnemiesLines = {
-    	"color": "green",
-    	"weight": 4,
-    	"dashArray": 8,
-    	"dashSpeed": -30,
-    	"opacity": 0.95
-		};
-
-		// Load .geoJSON
-		var FarmRouteEliteEnemies 		= new L.GeoJSON.AJAX([FarmRouteEliteEnemiesURL],{style:EliteEnemiesLines,onEachFeature:oef});
-
-		// FarmRouteEliteEnemiesGroup
-    	var FarmRouteEliteEnemiesGroup = L.layerGroup([
-    	EliteEnemies,
-    	FarmRouteEliteEnemies,
-    	])
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------- Farm Route - Mineral -------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var FarmRouteMineralURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteMineral.geojson"
-
-		// Stuff for lines
-		var FarmRouteMineralLines = {
-    	"color": "firebrick",
-    	"weight": 4,
-    	"dashArray": 8,
-    	"dashSpeed": -30,
-    	"opacity": 0.95
-		};
-
-		// Load .geoJSON
-		var FarmRouteMineral 		= new L.GeoJSON.AJAX([FarmRouteMineralURL],{style:FarmRouteMineralLines,onEachFeature:oef});
-
-		// FarmRouteMineralGroup
-    	var FarmRouteMineralGroup = L.layerGroup([
-    	ElectroCrystal,
-    	NoctilucousJade,
-    	CorLapis,
-    	MagicalCrystalChunk,
-    	CrystalChunk,
-    	WhiteIronChunk,
-    	Domain,
-    	Cave,
-		FarmRouteMineral,
-    	])
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------- Farm Route - Artifact ------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var FarmRouteArtifactURL	= "https://genproject.github.io/GMap/geojson/FarmRouteArtifact.geojson"
-
-		// Stuff for lines
-		var FarmRouteArtifactLines = {
-    	"color": "LightGreen",
-    	"weight": 4,
-    	"dashArray": 8,
-    	"dashSpeed": -30,
-    	"opacity": 0.95
-		};
-
-		// Load .geoJSON
-		var FarmRouteArtifact 		= new L.GeoJSON.AJAX([FarmRouteArtifactURL],{style:FarmRouteArtifactLines,onEachFeature:oef});
-
-		// FarmRouteArtifactGroup
-    	var FarmRouteArtifactGroup = L.layerGroup([
-    	ArtifactFodder,
-    	FarmRouteArtifact,
-    	])
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------- Farm Route - Qingxin -------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// geoJSON URL'S
-		var FarmRouteQingxinURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteQingxin.geojson"
-
-		// Stuff for lines
-		var FarmRouteQingxinLines = {
-    	"color": "LightGreen",
-    	"weight": 4,
-    	"dashArray": 8,
-    	"dashSpeed": -30,
-    	"opacity": 0.95
-		};
-
-		// Load .geoJSON
-		var FarmRouteQingxin 		= new L.GeoJSON.AJAX([FarmRouteQingxinURL],{style:FarmRouteQingxinLines,onEachFeature:oef});
-
-		// FarmRouteQingxinGroup
-    	var FarmRouteQingxinGroup = L.layerGroup([
-    	Qingxin,
-    	FarmRouteQingxin,
-    	])
-
-	//----------------------------------------------------------------------------------------------------------------------
-	//----------------------------------------------- Overlays -------------------------------------------------------------
-	//----------------------------------------------------------------------------------------------------------------------
-	//-Expand/Minimize
-
-		// Add to map on load
-    	var DefaultShow = L.layerGroup([
-    	Teleport,
-    	Statue,
-    	Domain,
-    	])
-
-    	DefaultShow.addTo(map)
-
-    	// Overlay Menu top left
-    	var mapOverlays={
-
-    	/*"Артефакты"                                     : ArtifactFodder,
-		"Фарм Артефактов"							    : FarmRouteArtifactGroup,
-		"Фарм Монстров"								    : FarmRouteEliteEnemiesGroup,
-		"Фарм Минералов"							    : FarmRouteMineralGroup,*/
-		"Электро кристалл"								: ElectroCrystal,
-		"Полуночный нефрит"								: NoctilucousJade,
-		"Кор Ляпис"										: CorLapis,
-		"Обломок кристалла"								: CrystalChunk,
-		"Магический кристальный обломок"				: MagicalCrystalChunk,
-		"Обломок белого железа"							: WhiteIronChunk,
-		"Волчий крюк"									: Wolfhook,
-		"Трава Светяшка"								: SmallLampGrass,
-		"Валяшка"										: Valberry,
-		"Сесилия"										: Cecilia,
-		"Звездная ракушка"								: Starconch,
-		"Побеги бамбука"								: BambooShoot,
-		"Гриб"										    : Mushroom,
-		"Цветок сахарок"								: SweetFlower,
-		"Одуванчик"								        : DandelionSeed,
-		"Мята"											: Mint,
-		"Ягода"											: Berry,
-		"Яйца"										    : BirdEgg,
-		"Заоблочный перчик"								: JueyunChili,
-		"Цветок Синсин"									: FarmRouteQingxinGroup,
-		"Лотус"									        : LotusHead,
-		"Мясо"										    : RawMeat,
-		"Птица"											: Fowl,
-		"Рыба"											: Fish,
-		"Краб"											: Crab,
-		}
-
-		var layerControl = L.control.layers(null, mapOverlays, {position:'topright'}).addTo(map);
-
-    </script>
-  </body>
+   <meta charset="utf-8">
+   <head>
+      <title>Genshin Impact Resource Search Map</title>
+      <link rel="icon" href="favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="scripts/leaflet.css?ver=1.0">
+      <link rel="stylesheet" href="scripts/MarkerCluster.css?ver=1.0">
+      <link rel="stylesheet" href="scripts/all.min.css?ver=1.0">
+      <!-- Font Awesome Free 5.15.1 -->
+      <script src="scripts/leaflet.js"></script>
+      <script src="scripts/leaflet.ajax.min.js"></script>
+      <script src="scripts/leaflet-heat.js"></script>
+      <script src="scripts/L.Path.DashFlow.js"></script>
+      <script src="scripts/leaflet.markercluster.js"></script>
+   </head>
+   <body style="height: 100%;margin: 0;">
+      <div id="map" style="width: 100%; height: 100%; background: #000000;"></div>
+      <!-- Workaround for 1px lines appearing in some browsers due to fractional transforms
+         and resulting anti-aliasing.-->
+      <style>
+         .leaflet-tile-container img {
+         width: 256.5px !important;
+         height: 256.5px !important;
+         }
+      </style>
+      <script type="text/javascript">
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------- Main ---------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         	// Creating the Map
+         	var map = L.map('map').setView([0, 0], 0);  // Mt. Tianheng
+         
+         	map.createPane('CustomPane');
+         	map.getPane('CustomPane').style.zIndex = 600; // Needed in order to put markers in front of farm route lines
+         
+             L.tileLayer('maps/teyvat/{z}/{x}/{y}.png', {
+             continuousWorld: false,
+             noWrap: true,
+             minZoom: 3,
+             maxZoom: 6,
+             zoomControl: false,
+         	minNativeZoom: 3,
+         	maxNativeZoom: 5,
+         	updateInterval: 200,
+             }).addTo(map);
+         
+         	// OnEachFeature function
+         	function oef(feature, layer) {
+         		if (feature.properties && feature.properties.name) {
+         			layer.bindTooltip(feature.properties.name, {
+         				opacity: 1.00,
+         				direction: 'top',
+         				offset: [0, -7]
+         			});
+         		}
+         		if (feature.properties && feature.properties.name && feature.properties.description) {
+         			layer.bindPopup("<center><b> " + feature.properties.name + "</center></b><br>" + feature.properties.description);
+         		}
+         		if (feature.properties && feature.properties.name && feature.properties.description && feature.properties.name.startsWith("* Телепорт") ){
+         			layer.setStyle({
+         				color: "LightSkyBlue",
+         				dashArray: 10,
+         				weight: 3,
+         			});
+         		}
+         	}
+         
+         	// OnEachFeature2 function
+         	function oef2(feature, layer) {
+         		if (feature.properties && feature.properties.name) {
+         			layer.bindTooltip(feature.properties.name, {
+         				opacity: 1.00,
+         				direction: 'top',
+         				offset: [0, -7]
+         			});
+         		}
+         		if (feature.properties && feature.properties.name && feature.properties.description) {
+         			layer.bindPopup("<center><b> " + feature.properties.name + "</center></b><br>" + feature.properties.description);
+         		}
+         		if (feature.properties && feature.properties.name.endsWith("Mitachurl") ){
+         			layer.setIcon(MitachurlIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Ruin Guard") ){
+         			layer.setIcon(RuinGuardIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Ruin Grader") ){
+         			layer.setIcon(RuinGraderIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Ruin Hunter") ){
+         			layer.setIcon(RuinHunterIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Hydro Abyss Mage") ){
+         			layer.setIcon(HydroAbyssMageIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Cryo Abyss Mage") ){
+         			layer.setIcon(CryoAbyssMageIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Pyro Abyss Mage") ){
+         			layer.setIcon(PyroAbyssMageIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Fatui Pyro Agent") ){
+         			layer.setIcon(FatuiPyroAgentIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Fatui Electro Cicin Mage") ){
+         			layer.setIcon(FatuiElectroCicinMageIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Fatui Cryo Cicin Mage") ){
+         			layer.setIcon(FatuiCryoCicinMageIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Geovishap Hatchling") ){
+         			layer.setIcon(GeovishapHatchlingIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Stonehide Lawachurl") ){
+         			layer.setIcon(StonehideLawachurlIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Frostarm Lawachurl") ){
+         			layer.setIcon(FrostarmLawachurlIcon);
+         			};
+         		}
+         
+         	// OnEachFeatureChest function
+         	function oefChest(feature, layer) {
+         		if (feature.properties && feature.properties.name) {
+         			layer.bindTooltip(feature.properties.name, {
+         				opacity: 1.00,
+         				direction: 'top',
+         				offset: [0, -7],
+         			});
+         		}
+         		if (feature.properties && feature.properties.name && feature.properties.description) {
+         			layer.bindPopup("<center><b> " + feature.properties.name + "</center></b><br>" + feature.properties.description);
+         		}
+         		if (feature.properties && feature.properties.name.endsWith("Common Chest") ){
+         			layer.setIcon(ChestCommonIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Exquisite Chest") ){
+         			layer.setIcon(ChestExquisiteIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Precious Chest") ){
+         			layer.setIcon(ChestPreciousIcon);
+         			};
+         		if (feature.properties && feature.properties.name.endsWith("Luxurious Chest") ){
+         			layer.setIcon(ChestLuxuriousIcon);
+         			};
+         		}
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //--------------------------------------------- Info Button ------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Teleport -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var TeleportURL 		= "https://genproject.github.io/GMap/geojson/Teleport.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var TeleportIcon = L.icon({
+         	iconUrl: 'markers/TeleportMarker.png',
+         	iconSize:      [18, 26],	// size of the icon
+         	iconAnchor:    [9, 13],		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarker
+         	function TeleportMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			//To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: TeleportIcon});
+         	}
+         	
+         	// Load .geoJSON
+         	var Teleport			= new L.GeoJSON.AJAX([TeleportURL],{pointToLayer:TeleportMarker,onEachFeature:oef}); //.addTo(map)
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------ Statue --------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var StatueURL 					= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Statue.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var StatueIcon = L.icon({
+         	iconUrl: 'markers/StatueMarker.png',
+         	iconSize:      [24, 34],	// size of the icon
+         	iconAnchor:    [12, 17],	// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarker
+         	function StatueMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: StatueIcon});
+         	}
+         	
+         	// Load .geoJSON
+         	var Statue						= new L.GeoJSON.AJAX([StatueURL],{pointToLayer:StatueMarker,onEachFeature:oef}); //.addTo(map)
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------ Domain --------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var DomainURL 					= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Domain.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var DomainIcon = L.icon({
+         	iconUrl: 'markers/DomainMarker.png',
+         	iconSize:      [23, 23],	// size of the icon
+         	iconAnchor:    [11.5, 11.5],	// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarker
+         	function DomainMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: DomainIcon});
+         	}
+         	
+         	// Load .geoJSON
+         	var Domain						= new L.GeoJSON.AJAX([DomainURL],{pointToLayer:DomainMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------- Cave ---------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         	
+         	// geoJSON URL'S
+         	var CaveURL 		= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Cave.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var CaveIcon = L.icon({
+         	iconUrl: 'markers/CaveMarker.png',
+         	iconSize:      [20, 14],	// size of the icon
+         	iconAnchor:    [10, 7],		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   [0, 1],		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: [0, -5]		// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarker
+         	function CaveMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: CaveIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Cave			= new L.GeoJSON.AJAX([CaveURL],{pointToLayer:CaveMarker,onEachFeature:oef}); //.addTo(map)
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //-------------------------------------------- Marker Settings ---------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         	
+         	// All Other
+         	var GlobalMarkerIconSize 			= [20, 20]
+         	var GlobalMarkerIconAnchor 			= [10, 10]
+         	var GlobalMarkerIconPopupAnchor 	= [0, -12]
+         	var GlobalMarkerIconTooltipAnchor 	= [0, -5]
+         
+         	//var GlobalMarkerShadowIconUrl		= 'markers/MarkerShadow.png'
+         	var GlobalMarkerShadowIconUrl		= ''
+         	var GlobalMarkerShadowSize			= [20, 20]
+         	var GlobalMarkerShadowAnchor		= [10, 8]
+         
+         
+         
+         
+         
+         	// Elite
+         	var EliteEnemiesIconSize 			= [30, 30]
+         	var EliteEnemiesIconAnchor 			= [15, 15]
+         	var EliteEnemiesIconPopupAnchor 	= [0, -12]
+         	var EliteEnemiesIconTooltipAnchor 	= [0, -5]
+         
+         	//var EliteEnemiesShadowIconUrl		= 'markers/enemies/EliteEnemiesShadowMarker.png'
+         	var EliteEnemiesShadowIconUrl		= ''
+         	var EliteEnemiesShadowSize			= [30, 30]
+         	var EliteEnemiesShadowAnchor		= [15, 11]
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------ Chest ---------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var ChestURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Chest.geojson"
+         	//var ChestFarmRouteURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteChest.geojson"
+         
+         	/*
+         	// Stuff for CircleMarker
+         	function ChestMarker(feature, latlng){
+         	let options = {
+         	radius: 5,
+         	fillColor: "saddlebrown", 	// ChestColor
+         	color: "white",				// Stroke Color
+         	weight: 1,					// Stroke Weight
+         	opacity: 0.95,				// Stroke Opacity
+         	fillOpacity: 0.95,
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.circleMarker(latlng, options);
+         	}
+         	*/
+         
+         	var ChestIconSize 			= [30, 30] //[24, 24]
+         	var ChestIconAnchor 		= [15, 15] //[12, 12]
+         	var ChestIconPopupAnchor 	= [0, -12]
+         	var ChestIconTooltipAnchor 	= [0, -5]
+         
+         	// Stuff for CustomMarkerIcon
+         	var ChestIcon = L.icon({
+         	iconUrl: 		'markers/chest/ChestMarker.png',
+         	iconSize:     	 ChestIconSize,				// size of the icon
+         	iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarkerIcon
+         	var ChestCommonIcon = L.icon({
+         	iconUrl: 		'markers/chest/ChestCommon.png',
+         	iconSize:     	 ChestIconSize,				// size of the icon
+         	iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarkerIcon
+         	var ChestExquisiteIcon = L.icon({
+         	iconUrl: 		'markers/chest/ChestExquisite.png',
+         	iconSize:     	 ChestIconSize,				// size of the icon
+         	iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarkerIcon
+         	var ChestPreciousIcon = L.icon({
+         	iconUrl: 		'markers/chest/ChestPrecious.png',
+         	iconSize:     	 ChestIconSize,				// size of the icon
+         	iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarkerIcon
+         	var ChestLuxuriousIcon = L.icon({
+         	iconUrl: 		'markers/chest/ChestLuxurious.png',
+         	iconSize:     	 ChestIconSize,				// size of the icon
+         	iconAnchor:   	 ChestIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 ChestIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   ChestIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	});
+         
+         	// Stuff for CustomMarker
+         	function ChestMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane',			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: ChestIcon});
+         	}
+         
+         	/*
+         	// Stuff for lines
+         	var ChestLines = {
+            	"color": "#b22222",
+            	"weight": 5,
+            	"opacity": 0.95
+         	};
+         	*/
+         
+         	// Load .geoJSON
+         	var Chest 				= new L.GeoJSON.AJAX([ChestURL],{pointToLayer:ChestMarker,onEachFeature:oefChest});
+         	//var ChestFarmRoute 	= new L.GeoJSON.AJAX([ChestFarmRouteURL],{style:ChestLines,onEachFeature:oef});
+         
+         //*----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------- Artifact Fodder ----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var ArtifactFodderURL 			= "https://genproject.github.io/GMap/geojson/ArtifactFodder.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var ArtifactFodderIcon = L.icon({
+         	iconUrl:      'markers/ArtifactFodderMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         
+         	/*/ Stuff for CustomMarkerIcon
+         	var ArtifactFodderIcon = L.icon({
+         	iconUrl:        'markers/ArtifactFodderMarker.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});*/
+         
+         
+         	// Stuff for CustomMarker
+         	function ArtifactFodderMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: ArtifactFodderIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var ArtifactFodder 				= new L.GeoJSON.AJAX([ArtifactFodderURL],{pointToLayer:ArtifactFodderMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------- Electro Crystal ----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var ElectroCrystalURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/ElectroCrystal.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var ElectroCrystalIcon = L.icon({
+         	iconUrl: 'markers/ElectroCrystalMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function ElectroCrystalMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: ElectroCrystalIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var ElectroCrystal 				= new L.GeoJSON.AJAX([ElectroCrystalURL],{pointToLayer:ElectroCrystalMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------ Noctilucous Jade ----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var NoctilucousJadeURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/NoctilucousJade.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var NoctilucousJadeIcon = L.icon({
+         	iconUrl: 'markers/NoctilucousJadeMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function NoctilucousJadeMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: NoctilucousJadeIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var NoctilucousJade 				= new L.GeoJSON.AJAX([NoctilucousJadeURL],{pointToLayer:NoctilucousJadeMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //---------------------------------------------- Cor Lapis -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var CorLapisURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/CorLapis.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var CorLapisIcon = L.icon({
+         	iconUrl: 'markers/CorLapisMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function CorLapisMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: CorLapisIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var CorLapis 				= new L.GeoJSON.AJAX([CorLapisURL],{pointToLayer:CorLapisMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //-------------------------------------------- Crystal Chunk -----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var CrystalChunkURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/CrystalChunk.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var CrystalChunkIcon = L.icon({
+         	iconUrl:      'markers/CrystalChunkMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function CrystalChunkMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: CrystalChunkIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var CrystalChunk 			= new L.GeoJSON.AJAX([CrystalChunkURL],{pointToLayer:CrystalChunkMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //---------------------------------------- Magical Crystal Chunk -------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var MagicalCrystalChunkURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/MagicalCrystalChunk.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var MagicalCrystalChunkIcon = L.icon({
+         	iconUrl: 'markers/MagicalCrystalChunkMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function MagicalCrystalChunkMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: MagicalCrystalChunkIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var MagicalCrystalChunk 			= new L.GeoJSON.AJAX([MagicalCrystalChunkURL],{pointToLayer:MagicalCrystalChunkMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------- White Iron Chunk ---------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var WhiteIronChunkURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/WhiteIronChunk.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var WhiteIronChunkIcon = L.icon({
+         	iconUrl: 'markers/WhiteIronChunkMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function WhiteIronChunkMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: WhiteIronChunkIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var WhiteIronChunk 			= new L.GeoJSON.AJAX([WhiteIronChunkURL],{pointToLayer:WhiteIronChunkMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Wolfhook -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var WolfhookURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Wolfhook.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var WolfhookIcon = L.icon({
+         	iconUrl: 'markers/WolfhookMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function WolfhookMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: WolfhookIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Wolfhook 			= new L.GeoJSON.AJAX([WolfhookURL],{pointToLayer:WolfhookMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Valberry -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var ValberryURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Valberry.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var ValberryIcon = L.icon({
+         	iconUrl: 'markers/ValberryMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function ValberryMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: ValberryIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Valberry 			= new L.GeoJSON.AJAX([ValberryURL],{pointToLayer:ValberryMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Cecilia -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var CeciliaURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Cecilia.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var CeciliaIcon = L.icon({
+         	iconUrl: 'markers/CeciliaMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function CeciliaMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: CeciliaIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Cecilia 			= new L.GeoJSON.AJAX([CeciliaURL],{pointToLayer:CeciliaMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------- Small Lamp Grass ---------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var SmallLampGrassURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/SmallLampGrass.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var SmallLampGrassIcon = L.icon({
+         	iconUrl: 'markers/SmallLampGrassMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function SmallLampGrassMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: SmallLampGrassIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var SmallLampGrass 			= new L.GeoJSON.AJAX([SmallLampGrassURL],{pointToLayer:SmallLampGrassMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //---------------------------------------------- Starconch -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var StarconchURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Starconch.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var StarconchIcon = L.icon({
+         	iconUrl: 'markers/StarconchMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function StarconchMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: StarconchIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Starconch 			= new L.GeoJSON.AJAX([StarconchURL],{pointToLayer:StarconchMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //--------------------------------------------- Bamboo Shoot -----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var BambooShootURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/BambooShoot.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var BambooShootIcon = L.icon({
+         	iconUrl: 'markers/BambooShootMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function BambooShootMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: BambooShootIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var BambooShoot 			= new L.GeoJSON.AJAX([BambooShootURL],{pointToLayer:BambooShootMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Mushroom -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var MushroomURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Mushroom.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var MushroomIcon = L.icon({
+         	iconUrl: 'markers/MushroomMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function MushroomMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: MushroomIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Mushroom 			= new L.GeoJSON.AJAX([MushroomURL],{pointToLayer:MushroomMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //--------------------------------------------- Sweet Flower -----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var SweetFlowerURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/SweetFlower.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var SweetFlowerIcon = L.icon({
+         	iconUrl: 'markers/SweetFlowerMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function SweetFlowerMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: SweetFlowerIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var SweetFlower 			= new L.GeoJSON.AJAX([SweetFlowerURL],{pointToLayer:SweetFlowerMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //-------------------------------------------- Dandelion Seed ----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var DandelionSeedURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/DandelionSeed.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var DandelionSeedIcon = L.icon({
+         	iconUrl: 'markers/DandelionSeedMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function DandelionSeedMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: DandelionSeedIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var DandelionSeed 			= new L.GeoJSON.AJAX([DandelionSeedURL],{pointToLayer:DandelionSeedMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------- Mint ---------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var MintURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Mint.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var MintIcon = L.icon({
+         	iconUrl: 'markers/MintMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function MintMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: MintIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Mint 			= new L.GeoJSON.AJAX([MintURL],{pointToLayer:MintMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------- Berry --------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var BerryURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Berry.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var BerryIcon = L.icon({
+         	iconUrl: 'markers/BerryMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function BerryMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: BerryIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Berry 			= new L.GeoJSON.AJAX([BerryURL],{pointToLayer:BerryMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------ Bird Egg ------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var BirdEggURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/BirdEgg.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var BirdEggIcon = L.icon({
+         	iconUrl: 'markers/BirdEggMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function BirdEggMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: BirdEggIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var BirdEgg 			= new L.GeoJSON.AJAX([BirdEggURL],{pointToLayer:BirdEggMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------ Qingxin -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var QingxinURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Qingxin.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var QingxinIcon = L.icon({
+         	iconUrl: 'markers/QingxinMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function QingxinMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: QingxinIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Qingxin 			= new L.GeoJSON.AJAX([QingxinURL],{pointToLayer:QingxinMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //--------------------------------------------- Jueyun Chili -----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var JueyunChiliURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/JueyunChili.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var JueyunChiliIcon = L.icon({
+         	iconUrl: 'markers/JueyunChiliMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function JueyunChiliMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: JueyunChiliIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var JueyunChili 			= new L.GeoJSON.AJAX([JueyunChiliURL],{pointToLayer:JueyunChiliMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //---------------------------------------------- Lotus Head ------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var LotusHeadURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/LotusHead.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var LotusHeadIcon = L.icon({
+         	iconUrl: 'markers/LotusHeadMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function LotusHeadMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: LotusHeadIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var LotusHead 			= new L.GeoJSON.AJAX([LotusHeadURL],{pointToLayer:LotusHeadMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Raw Meat -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var RawMeatURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/RawMeat.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var RawMeatIcon = L.icon({
+         	iconUrl: 'markers/RawMeatMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function RawMeatMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: RawMeatIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var RawMeat 			= new L.GeoJSON.AJAX([RawMeatURL],{pointToLayer:RawMeatMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------- Fowl ---------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var FowlURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Fowl.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var FowlIcon = L.icon({
+         	iconUrl: 'markers/FowlMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function FowlMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: FowlIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Fowl 			= new L.GeoJSON.AJAX([FowlURL],{pointToLayer:FowlMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------- Fish ---------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var FishURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Fish.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var FishIcon = L.icon({
+         	iconUrl: 'markers/FishMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function FishMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: FishIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Fish 				= new L.GeoJSON.AJAX([FishURL],{pointToLayer:FishMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //------------------------------------------------- Crab ---------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var CrabURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/Crab.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var CrabIcon = L.icon({
+         	iconUrl: 'markers/CrabMarker.png',
+         	iconSize:      GlobalMarkerIconSize,			// size of the icon
+         	iconAnchor:    GlobalMarkerIconAnchor,			// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:   GlobalMarkerIconPopupAnchor,		// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor: GlobalMarkerIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     GlobalMarkerShadowIconUrl,
+         	shadowSize:    GlobalMarkerShadowSize,
+         	shadowAnchor:  GlobalMarkerShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function CrabMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: CrabIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var Crab 					= new L.GeoJSON.AJAX([CrabURL],{pointToLayer:CrabMarker,onEachFeature:oef});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //-------------------------------------------- Elite Enemies -----------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var EliteEnemiesURL 			= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/EliteEnemies.geojson"
+         
+         	// Stuff for CustomMarkerIcon
+         	var EliteEnemiesIcon = L.icon({
+         	iconUrl: 		'markers/enemies/EliteEnemiesMarker.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var MitachurlIcon = L.icon({
+            	iconUrl: 		'markers/enemies/Mitachurl.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var RuinGuardIcon = L.icon({
+            	iconUrl: 		'markers/enemies/RuinGuard.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var RuinGraderIcon = L.icon({
+            	iconUrl: 		'markers/enemies/RuinGrader.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var RuinHunterIcon = L.icon({
+            	iconUrl: 		'markers/enemies/RuinHunter.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var HydroAbyssMageIcon = L.icon({
+            	iconUrl: 		'markers/enemies/HydroAbyssMage.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var CryoAbyssMageIcon = L.icon({
+            	iconUrl: 		'markers/enemies/CryoAbyssMage.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var PyroAbyssMageIcon = L.icon({
+            	iconUrl: 		'markers/enemies/PyroAbyssMage.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var FatuiPyroAgentIcon = L.icon({
+            	iconUrl: 		'markers/enemies/FatuiPyroAgent.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var FatuiElectroCicinMageIcon = L.icon({
+            	iconUrl: 		'markers/enemies/FatuiElectroCicinMage.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var FatuiCryoCicinMageIcon = L.icon({
+            	iconUrl: 		'markers/enemies/FatuiCryoCicinMage.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var GeovishapHatchlingIcon = L.icon({
+            	iconUrl: 		'markers/enemies/GeovishapHatchling.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var StonehideLawachurlIcon = L.icon({
+            	iconUrl: 		'markers/enemies/StonehideLawachurl.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	var FrostarmLawachurlIcon = L.icon({
+            	iconUrl: 		'markers/enemies/FrostarmLawachurl.png',
+         	iconSize:     	 EliteEnemiesIconSize,			// size of the icon
+         	iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
+         	popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
+         	tooltipAnchor:   EliteEnemiesIconTooltipAnchor,	// The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+         	
+         	shadowUrl:     	 EliteEnemiesShadowIconUrl,
+         	shadowSize:      EliteEnemiesShadowSize,
+         	shadowAnchor:    EliteEnemiesShadowAnchor,
+         	});
+         
+         	// Stuff for CustomMarker
+         	function EliteEnemiesMarker(feature, latlng){
+         	let options = {
+         	opacity: 1,					// Marker Opacity
+         	pane: 'CustomPane'			// To Adjust Z-Index
+         	}
+         	return L.marker(latlng, {icon: EliteEnemiesIcon});
+         	}
+         
+         	// Load .geoJSON
+         	var EliteEnemies 				= new L.GeoJSON.AJAX([EliteEnemiesURL],{pointToLayer:EliteEnemiesMarker,onEachFeature:oef2});
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //-------------------------------------- Farm Route - Elite Enemies ----------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var FarmRouteEliteEnemiesURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteEliteEnemies.geojson"
+         
+         	// Stuff for lines
+         	var EliteEnemiesLines = {
+            	"color": "green",
+            	"weight": 4,
+            	"dashArray": 8,
+            	"dashSpeed": -30,
+            	"opacity": 0.95
+         	};
+         
+         	// Load .geoJSON
+         	var FarmRouteEliteEnemies 		= new L.GeoJSON.AJAX([FarmRouteEliteEnemiesURL],{style:EliteEnemiesLines,onEachFeature:oef});
+         
+         	// FarmRouteEliteEnemiesGroup
+            	var FarmRouteEliteEnemiesGroup = L.layerGroup([
+            	EliteEnemies,
+            	FarmRouteEliteEnemies,
+            	])
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------- Farm Route - Mineral -------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var FarmRouteMineralURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteMineral.geojson"
+         
+         	// Stuff for lines
+         	var FarmRouteMineralLines = {
+            	"color": "firebrick",
+            	"weight": 4,
+            	"dashArray": 8,
+            	"dashSpeed": -30,
+            	"opacity": 0.95
+         	};
+         
+         	// Load .geoJSON
+         	var FarmRouteMineral 		= new L.GeoJSON.AJAX([FarmRouteMineralURL],{style:FarmRouteMineralLines,onEachFeature:oef});
+         
+         	// FarmRouteMineralGroup
+            	var FarmRouteMineralGroup = L.layerGroup([
+            	ElectroCrystal,
+            	NoctilucousJade,
+            	CorLapis,
+            	MagicalCrystalChunk,
+            	CrystalChunk,
+            	WhiteIronChunk,
+            	Domain,
+            	Cave,
+         	FarmRouteMineral,
+            	])
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------- Farm Route - Artifact ------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var FarmRouteArtifactURL	= "https://genproject.github.io/GMap/geojson/FarmRouteArtifact.geojson"
+         
+         	// Stuff for lines
+         	var FarmRouteArtifactLines = {
+            	"color": "LightGreen",
+            	"weight": 4,
+            	"dashArray": 8,
+            	"dashSpeed": -30,
+            	"opacity": 0.95
+         	};
+         
+         	// Load .geoJSON
+         	var FarmRouteArtifact 		= new L.GeoJSON.AJAX([FarmRouteArtifactURL],{style:FarmRouteArtifactLines,onEachFeature:oef});
+         
+         	// FarmRouteArtifactGroup
+            	var FarmRouteArtifactGroup = L.layerGroup([
+            	ArtifactFodder,
+            	FarmRouteArtifact,
+            	])
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------- Farm Route - Qingxin -------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// geoJSON URL'S
+         	var FarmRouteQingxinURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteQingxin.geojson"
+         
+         	// Stuff for lines
+         	var FarmRouteQingxinLines = {
+            	"color": "LightGreen",
+            	"weight": 4,
+            	"dashArray": 8,
+            	"dashSpeed": -30,
+            	"opacity": 0.95
+         	};
+         
+         	// Load .geoJSON
+         	var FarmRouteQingxin 		= new L.GeoJSON.AJAX([FarmRouteQingxinURL],{style:FarmRouteQingxinLines,onEachFeature:oef});
+         
+         	// FarmRouteQingxinGroup
+            	var FarmRouteQingxinGroup = L.layerGroup([
+            	Qingxin,
+            	FarmRouteQingxin,
+            	])
+         
+         //----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Overlays -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+         	// Add to map on load
+            	var DefaultShow = L.layerGroup([
+            	Teleport,
+            	Statue,
+            	Domain,
+            	])
+         
+            	DefaultShow.addTo(map)
+         
+            	// Overlay Menu top left
+            	var mapOverlays={
+         
+            	/*"Артефакты"                                     : ArtifactFodder,
+         	"Фарм Артефактов"							    : FarmRouteArtifactGroup,
+         	"Фарм Монстров"								    : FarmRouteEliteEnemiesGroup,
+         	"Фарм Минералов"							    : FarmRouteMineralGroup,*/
+         	"Электро кристалл"								: ElectroCrystal,
+         	"Полуночный нефрит"								: NoctilucousJade,
+         	"Кор Ляпис"										: CorLapis,
+         	"Обломок кристалла"								: CrystalChunk,
+         	"Магический кристальный обломок"				: MagicalCrystalChunk,
+         	"Обломок белого железа"							: WhiteIronChunk,
+         	"Волчий крюк"									: Wolfhook,
+         	"Трава Светяшка"								: SmallLampGrass,
+         	"Валяшка"										: Valberry,
+         	"Сесилия"										: Cecilia,
+         	"Звездная ракушка"								: Starconch,
+         	"Побеги бамбука"								: BambooShoot,
+         	"Гриб"										    : Mushroom,
+         	"Цветок сахарок"								: SweetFlower,
+         	"Одуванчик"								        : DandelionSeed,
+         	"Мята"											: Mint,
+         	"Ягода"											: Berry,
+         	"Яйца"										    : BirdEgg,
+         	"Заоблочный перчик"								: JueyunChili,
+         	"Цветок Синсин"									: FarmRouteQingxinGroup,
+         	"Лотус"									        : LotusHead,
+         	"Мясо"										    : RawMeat,
+         	"Птица"											: Fowl,
+         	"Рыба"											: Fish,
+         	"Краб"											: Crab,
+         	}
+         
+         	var layerControl = L.control.layers(null, mapOverlays, {position:'topright'}).addTo(map);
+         
+            
+      </script>
+   </body>
 </html>
