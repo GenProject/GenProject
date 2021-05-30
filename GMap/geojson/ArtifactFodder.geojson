@@ -5,8 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "* Артефакт (еда)",
-        "description": "В деревянном ящике рядом с столбом",
-        "icons": [{ "src": "6d09b837e25086a0796e4b9142888634_2908890532103113308.png", "sizes": "64x64", "type": "image/png"}]
+        "description": "В деревянном ящике рядом с столбом"
       },
       "geometry": {
         "type": "Point",
@@ -385,8 +384,6 @@
       "properties": {
         "name": "* Артефакт (еда)",
         "description": "Interact with the urn almost at the top of the mountain near the bridge. Use the teleporter on Mt. Aozang to get here.",
-        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cherry_Blossoms_and_Washington_Monument.jpg/320px-Cherry_Blossoms_and_Washington_Monument.jpg",
-                            "info": "Сеть фитнес клубов Барс - это  тренажерные залы, оснащенные современными профессиональными силовыми тренажерами и  кардиолинейкой.Адрес:414057, Астрахань, проезд Николая Островского, 8 . Телефон:(8512) 62-95-82"
       },
       "geometry": {
         "type": "Point",
