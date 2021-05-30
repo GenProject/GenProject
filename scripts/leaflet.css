@@ -274,8 +274,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* general typography */
 .leaflet-container {
-	text-shadow: 0 0 10px #FFFFFF, 2px 2px 15px rgba(206,89,55,0);
-    color: #FFFFFF;
 	font: 16px/1.5 "Helvetica Neue", Bahnschrift, Helvetica, sans-serif;
 	}
 
@@ -378,9 +376,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 .leaflet-control-layers-expanded {
 	padding: 20px 10px 10px 20px;
-	color: #333;
 	background: #fff;
     border-radius: 40px;
+    color: hsla(0,0%,100%,.7);
 	}
 .leaflet-control-layers-scrollbar {
 	overflow-y: scroll;
@@ -392,6 +390,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	cursor: pointer;
 	position: relative;
 	top: 1px;
+
+
+
 	}
 .leaflet-control-layers label {
 	display: block;
@@ -445,8 +446,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	white-space: nowrap;
 	overflow: hidden;
 	-moz-box-sizing: border-box;
-	     box-sizing: border-box;
-
+	box-sizing: border-box;
 	background: #fff;
 	background: rgba(255, 255, 255, 0.5);
 	}
@@ -463,11 +463,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-touch .leaflet-control-layers,
 .leaflet-touch .leaflet-bar {
 	box-shadow: none;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	border: 1px solid hsla(0,0%,100%,.3);
+	margin: 20px;
 	}
 .leaflet-touch .leaflet-control-layers,
 .leaflet-touch .leaflet-bar {
-    box-shadow: 0px 0px 0px 8px #000000, 0px 0px 0px 16px #4B4C4B, 0px 0px 0px 24px #828482, 0px 0px 0px 31px #B2B5B2, 0px 0px 0px 39px #DADDDA, 5px 5px 15px 5px rgba(0,0,0,0);
-    background: #000000;
 	background-clip: padding-box;
 	}
 
@@ -649,3 +651,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	margin-left: -12px;
 	border-right-color: #fff;
 	}
+
+
+
+
