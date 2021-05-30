@@ -8,7 +8,8 @@
           "labelInteractive": false
         },
         "name": "Teleport Waypoint",
-        "description": ""
+        "description": "",
+        "icons": [{ "src": "6d09b837e25086a0796e4b9142888634_2908890532103113308.png", "sizes": "64x64", "type": "image/png"}]
       },
       "geometry": {
         "type": "Point",
