@@ -16,7 +16,10 @@
   
   <body style="height: 100%;margin: 0;">
     <div id="map" style="width: 100%; height: 100%; background: #000000;"></div>
-    
+     
+    <span style="text-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;" >123</span>
+
+     
 	<!-- Workaround for 1px lines appearing in some browsers due to fractional transforms
     and resulting anti-aliasing.-->
 	<style>
@@ -399,7 +402,7 @@
 		var Chest 				= new L.GeoJSON.AJAX([ChestURL],{pointToLayer:ChestMarker,onEachFeature:oefChest});
 		//var ChestFarmRoute 	= new L.GeoJSON.AJAX([ChestFarmRouteURL],{style:ChestLines,onEachFeature:oef});
 
-	//----------------------------------------------------------------------------------------------------------------------
+	//*----------------------------------------------------------------------------------------------------------------------
 	//------------------------------------------- Artifact Fodder ----------------------------------------------------------
 	//----------------------------------------------------------------------------------------------------------------------
 	//-Expand/Minimize
@@ -420,10 +423,10 @@
 		shadowAnchor:  GlobalMarkerShadowAnchor,
 		});
 
-		/*
-		// Stuff for CustomMarkerIcon
+
+		/*/ Stuff for CustomMarkerIcon
 		var ArtifactFodderIcon = L.icon({
-		iconUrl:        'markers/ArtifactFodderMarker4.png',
+		iconUrl:        'markers/ArtifactFodderMarker.png',
 		iconSize:     	 EliteEnemiesIconSize,			// size of the icon
 		iconAnchor:   	 EliteEnemiesIconAnchor,		// point of the icon which will correspond to marker's location (X & Y=split in half)
 		popupAnchor:  	 EliteEnemiesIconPopupAnchor,	// point from which the popup should open relative to the iconAnchor
@@ -432,8 +435,8 @@
 		shadowUrl:     	 EliteEnemiesShadowIconUrl,
 		shadowSize:      EliteEnemiesShadowSize,
 		shadowAnchor:    EliteEnemiesShadowAnchor,
-		});
-		*/
+		});*/
+
 
 		// Stuff for CustomMarker
 		function ArtifactFodderMarker(feature, latlng){
@@ -1526,7 +1529,7 @@
 	//-Expand/Minimize
 
 		// geoJSON URL'S
-		var FarmRouteArtifactURL	= "https://raw.githubusercontent.com/Fr4nsson/GMap/main/geojson/FarmRouteArtifact.geojson"
+		var FarmRouteArtifactURL	= "https://genproject.github.io/GMap/geojson/FarmRouteArtifact.geojson"
 
 		// Stuff for lines
 		var FarmRouteArtifactLines = {
@@ -1588,9 +1591,10 @@
 
     	// Overlay Menu top left
     	var mapOverlays={
+    	/*"Артефакты"                                     : ArtifactFodder,
 		"Фарм Артефактов"							    : FarmRouteArtifactGroup,
 		"Фарм Монстров"								    : FarmRouteEliteEnemiesGroup,
-		"Фарм Минералов"							    : FarmRouteMineralGroup,
+		"Фарм Минералов"							    : FarmRouteMineralGroup,*/
 		"Электро кристалл"								: ElectroCrystal,
 		"Полуночный нефрит"								: NoctilucousJade,
 		"Кор Ляпис"										: CorLapis,

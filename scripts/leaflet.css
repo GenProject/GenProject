@@ -275,7 +275,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 /* general typography */
 .leaflet-container {
 	text-shadow: 0 0 10px #FFFFFF, 2px 2px 15px rgba(206,89,55,0);
-color: #FFFFFF;
+    color: #FFFFFF;
 	font: 16px/1.5 "Helvetica Neue", Bahnschrift, Helvetica, sans-serif;
 	}
 
@@ -466,8 +466,12 @@ color: #FFFFFF;
 	}
 .leaflet-touch .leaflet-control-layers,
 .leaflet-touch .leaflet-bar {
-	border: 2px solid rgba(0,0,0,0.2);
-	background-clip: padding-box;
+-webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+background: #ECEFCF;
+}
+body#tinymce {
+background: #FFFFFF	background-clip: padding-box;
 	}
 
 
