@@ -1569,39 +1569,6 @@
             	FarmRouteQingxin,
             	])
          
-//----------------------------------------------------------------------------------------------------------------------
-         //----------------------------------------------- Cecilia -------------------------------------------------------------
-         //----------------------------------------------------------------------------------------------------------------------
-         //-Expand/Minimize
-         
-            // geoJSON URL'S
-            var GeoURL          = "https://genproject.github.io/GMap/geo.geojson"
-         
-            // Stuff for CustomMarkerIcon
-            var GeoIcon = L.icon({
-            iconUrl: 'markers/anemoculus.4e648af2.webp',
-            iconSize:      GlobalMarkerIconSize,         // size of the icon
-            iconAnchor:    GlobalMarkerIconAnchor,       // point of the icon which will correspond to marker's location (X & Y=split in half)
-            popupAnchor:   GlobalMarkerIconPopupAnchor,     // point from which the popup should open relative to the iconAnchor
-            tooltipAnchor: GlobalMarkerIconTooltipAnchor,   // The coordinates of the point from which tooltips will "open", relative to the icon anchor.
-            
-            shadowUrl:     GlobalMarkerShadowIconUrl,
-            shadowSize:    GlobalMarkerShadowSize,
-            shadowAnchor:  GlobalMarkerShadowAnchor,
-            });
-         
-            // Stuff for CustomMarker
-            function GeoMarker(feature, latlng){
-            let options = {
-            opacity: 1,             // Marker Opacity
-            pane: 'CustomPane'         // To Adjust Z-Index
-            }
-            return L.marker(latlng, {icon: GeoIcon});
-            }
-         
-            // Load .geoJSON
-            var Geo          = new L.GeoJSON.AJAX([GeoURL],{pointToLayer:GeoMarker,onEachFeature:oef});
-         
 
          //----------------------------------------------------------------------------------------------------------------------
          //----------------------------------------------- Overlays -------------------------------------------------------------
