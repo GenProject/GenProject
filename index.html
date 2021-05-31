@@ -274,7 +274,7 @@
          //-Expand/Minimize
          	
          	// All Other
-         	var GlobalMarkerIconSize 			= [20, 20]
+         	var GlobalMarkerIconSize 			= [25, 25]
          	var GlobalMarkerIconAnchor 			= [10, 10]
          	var GlobalMarkerIconPopupAnchor 	= [0, -12]
          	var GlobalMarkerIconTooltipAnchor 	= [0, -5]
@@ -1569,6 +1569,40 @@
             	FarmRouteQingxin,
             	])
          
+//----------------------------------------------------------------------------------------------------------------------
+         //----------------------------------------------- Cecilia -------------------------------------------------------------
+         //----------------------------------------------------------------------------------------------------------------------
+         //-Expand/Minimize
+         
+            // geoJSON URL'S
+            var GeoURL          = "https://genproject.github.io/GMap/geo.geojson"
+         
+            // Stuff for CustomMarkerIcon
+            var GeoIcon = L.icon({
+            iconUrl: 'markers/anemoculus.4e648af2.webp',
+            iconSize:      GlobalMarkerIconSize,         // size of the icon
+            iconAnchor:    GlobalMarkerIconAnchor,       // point of the icon which will correspond to marker's location (X & Y=split in half)
+            popupAnchor:   GlobalMarkerIconPopupAnchor,     // point from which the popup should open relative to the iconAnchor
+            tooltipAnchor: GlobalMarkerIconTooltipAnchor,   // The coordinates of the point from which tooltips will "open", relative to the icon anchor.
+            
+            shadowUrl:     GlobalMarkerShadowIconUrl,
+            shadowSize:    GlobalMarkerShadowSize,
+            shadowAnchor:  GlobalMarkerShadowAnchor,
+            });
+         
+            // Stuff for CustomMarker
+            function GeoMarker(feature, latlng){
+            let options = {
+            opacity: 1,             // Marker Opacity
+            pane: 'CustomPane'         // To Adjust Z-Index
+            }
+            return L.marker(latlng, {icon: GeoIcon});
+            }
+         
+            // Load .geoJSON
+            var Geo          = new L.GeoJSON.AJAX([CeciliaURL],{pointToLayer:CeciliaMarker,onEachFeature:oef});
+         
+
          //----------------------------------------------------------------------------------------------------------------------
          //----------------------------------------------- Overlays -------------------------------------------------------------
          //----------------------------------------------------------------------------------------------------------------------
@@ -1586,11 +1620,12 @@
             	// Overlay Menu top left
             	var mapOverlays={
          
-            	/*"Артефакты"                                     : ArtifactFodder,
+            /* офф
          	"Фарм Артефактов"							    : FarmRouteArtifactGroup,
          	"Фарм Монстров"								    : FarmRouteEliteEnemiesGroup,
          	"Фарм Минералов"							    : FarmRouteMineralGroup,*/
-         	"Электро кристалл"								: ElectroCrystal,
+            "Geo"                        : Geo,
+            "Электро кристалл"								: ElectroCrystal,
          	"Полуночный нефрит"								: NoctilucousJade,
          	"Кор Ляпис"										: CorLapis,
          	"Обломок кристалла"								: CrystalChunk,
@@ -1616,7 +1651,10 @@
          	"Рыба"											: Fish,
          	"Краб"											: Crab,
          	}
-         
+         // Creating Image overlay
+var imageUrl = 'https://sun9-12.userapi.com/impg/781drhRgBgfY-YVbYbnQm0YdOPuOnFC0HXiUMQ/asS3xOt18ao.jpg?size=1280x720&quality=96&sign=8b03fc4a68a5e903a37f574c3e329030&type=album';
+var imageBounds = [[17.342761, 78.552432], [16.396553, 80.727725]];
+var overlay = L.imageOverlay(imageUrl, imageBounds);
          	var layerControl = L.control.layers(null, mapOverlays, {position:'topright'}).addTo(map);
          
             
